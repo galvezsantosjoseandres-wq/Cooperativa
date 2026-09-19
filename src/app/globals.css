@@ -29,11 +29,14 @@
   /* Anilina fucsia: la hebra activa */
   --anilina: #e8407f;
   --anilina-claro: #ff7fae;
+  /* Baños de la misma tintura: la pleita se tiñe por inmersión, no se mezcla */
+  --anilina-honda: #b9345f;
 
   /* Ocre quemado: la segunda tintura */
   --ocre: #e5a052;
   /* El ocre sobre el tinte necesita subir para mantener 4.5:1 */
   --ocre-tinte: #f5c78e;
+  --ocre-hondo: #c07b33;
 
   /* Paso de la trama */
   --paso: 20px;
@@ -356,8 +359,9 @@
   .junta-espinazo {
     position: absolute;
     top: -3px;
-    height: 6px;
-    background: var(--fibra-honda);
+    height: 5px;
+    background: var(--fibra);
+    box-shadow: 0 0 0 2px var(--anil-900);
     z-index: 6;
     pointer-events: none;
   }

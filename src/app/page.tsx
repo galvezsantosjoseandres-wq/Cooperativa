@@ -3,6 +3,7 @@ import {
   TrenzaFondo,
   TrenzaFrente,
   TrenzaMovil,
+  RemateEspinazo,
 } from "@/components/trenza";
 import {
   Cabo,
@@ -36,22 +37,28 @@ export default function Inicio() {
 
       <Encabezado />
 
-      <main id="contenido" className="relative flex-1">
-        {/* El espinazo: la MISMA hebra del primer viewport recorriendo la
-            página entera. Va por encima del fondo de las secciones, y cada
-            frontera lleva su junta: la rotura es deliberada, no un corte. */}
-        <div
-          aria-hidden="true"
-          className="espinazo pointer-events-none absolute top-0 bottom-0 left-1 w-[14px] opacity-70 sm:left-3 sm:w-[26px] sm:opacity-100"
-          style={{ backgroundImage: ESPINAZO, backgroundSize: "100% 132px" }}
-        />
-
+      <main id="contenido" className="flex-1">
         <Portada />
-        <Mecanismo />
-        <Productos />
-        <Gobierno />
-        <Asociarse />
-        <Contacto />
+
+        {/* El espinazo arranca donde el trenzado del primer viewport termina:
+            es la MISMA hebra saliendo del tejido y recorriendo la página. Va
+            por encima del fondo de las secciones, cada frontera lleva su junta
+            —la rotura es deliberada, no un corte— y al final se deshilacha en
+            vez de terminar a escuadra. */}
+        <div className="relative">
+          <div
+            aria-hidden="true"
+            className="espinazo pointer-events-none absolute top-0 bottom-0 left-1 w-[14px] opacity-80 sm:left-3 sm:w-[26px] sm:opacity-100"
+            style={{ backgroundImage: ESPINAZO, backgroundSize: "100% 132px" }}
+          />
+          <RemateEspinazo className="pointer-events-none absolute bottom-0 left-1 z-[6] h-[46px] w-[14px] translate-y-[44px] sm:left-3 sm:w-[26px]" />
+
+          <Mecanismo />
+          <Productos />
+          <Gobierno />
+          <Asociarse />
+          <Contacto />
+        </div>
       </main>
 
       <PieDePagina />

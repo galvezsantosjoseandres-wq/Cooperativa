@@ -125,53 +125,53 @@ export function TrenzaFondo({ className }: P) {
         </g>
         <g>
           <use href="#a31" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a31" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#a31" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a31" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#a31" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a33" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a33" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#a33" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a33" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#a33" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a35" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a35" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#a35" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a35" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#a35" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a37" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a37" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#a37" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a37" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#a37" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a39" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a39" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#a39" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a39" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#a39" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a41" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a41" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#a41" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a41" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#a41" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a43" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a43" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#a43" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a43" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#a43" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a45" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a45" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#a45" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a45" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#a45" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a47" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a47" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#a47" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a47" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#a47" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#a49" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#a49" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#a49" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#a49" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#a49" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
       </g>
     </svg>
@@ -292,53 +292,53 @@ export function TrenzaFrente({ className }: P) {
         </g>
         <g>
           <use href="#b32" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b32" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#b32" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b32" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#b32" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b34" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b34" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#b34" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b34" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#b34" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b36" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b36" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#b36" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b36" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#b36" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b38" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b38" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#b38" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b38" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#b38" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b40" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b40" fill="none" stroke="var(--fibra-honda)" strokeWidth={30} />
-          <use href="#b40" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b40" fill="none" stroke="var(--anilina-honda)" strokeWidth={30} />
+          <use href="#b40" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b42" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b42" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#b42" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b42" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#b42" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b44" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b44" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#b44" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b44" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#b44" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b46" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b46" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#b46" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b46" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#b46" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b48" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b48" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#b48" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b48" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#b48" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#b50" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={42} />
-          <use href="#b50" fill="none" stroke="var(--fibra-media)" strokeWidth={30} />
-          <use href="#b50" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#b50" fill="none" stroke="var(--ocre-hondo)" strokeWidth={30} />
+          <use href="#b50" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
       </g>
     </svg>
@@ -427,33 +427,33 @@ export function TrenzaMovil({ className }: P) {
         </g>
         <g>
           <use href="#m18" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m18" fill="none" stroke="var(--fibra-honda)" strokeWidth={27} />
-          <use href="#m18" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m18" fill="none" stroke="var(--anilina-honda)" strokeWidth={27} />
+          <use href="#m18" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m20" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m20" fill="none" stroke="var(--fibra-honda)" strokeWidth={27} />
-          <use href="#m20" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m20" fill="none" stroke="var(--anilina-honda)" strokeWidth={27} />
+          <use href="#m20" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m22" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m22" fill="none" stroke="var(--fibra-honda)" strokeWidth={27} />
-          <use href="#m22" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m22" fill="none" stroke="var(--anilina-honda)" strokeWidth={27} />
+          <use href="#m22" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m23" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m23" fill="none" stroke="var(--fibra-media)" strokeWidth={27} />
-          <use href="#m23" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m23" fill="none" stroke="var(--ocre-hondo)" strokeWidth={27} />
+          <use href="#m23" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m25" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m25" fill="none" stroke="var(--fibra-media)" strokeWidth={27} />
-          <use href="#m25" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m25" fill="none" stroke="var(--ocre-hondo)" strokeWidth={27} />
+          <use href="#m25" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m27" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m27" fill="none" stroke="var(--fibra-media)" strokeWidth={27} />
-          <use href="#m27" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m27" fill="none" stroke="var(--ocre-hondo)" strokeWidth={27} />
+          <use href="#m27" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m1" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
@@ -502,28 +502,28 @@ export function TrenzaMovil({ className }: P) {
         </g>
         <g>
           <use href="#m19" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m19" fill="none" stroke="var(--fibra-honda)" strokeWidth={27} />
-          <use href="#m19" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m19" fill="none" stroke="var(--anilina-honda)" strokeWidth={27} />
+          <use href="#m19" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m21" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m21" fill="none" stroke="var(--fibra-honda)" strokeWidth={27} />
-          <use href="#m21" fill="none" stroke="var(--fibra-media)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m21" fill="none" stroke="var(--anilina-honda)" strokeWidth={27} />
+          <use href="#m21" fill="none" stroke="var(--anilina)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m24" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m24" fill="none" stroke="var(--fibra-media)" strokeWidth={27} />
-          <use href="#m24" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m24" fill="none" stroke="var(--ocre-hondo)" strokeWidth={27} />
+          <use href="#m24" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m26" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m26" fill="none" stroke="var(--fibra-media)" strokeWidth={27} />
-          <use href="#m26" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m26" fill="none" stroke="var(--ocre-hondo)" strokeWidth={27} />
+          <use href="#m26" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
         <g>
           <use href="#m28" fill="none" stroke="var(--casquillo, var(--anil-850))" strokeWidth={39} />
-          <use href="#m28" fill="none" stroke="var(--fibra-media)" strokeWidth={27} />
-          <use href="#m28" fill="none" stroke="var(--fibra)" strokeWidth={2.2} opacity={0.3} />
+          <use href="#m28" fill="none" stroke="var(--ocre-hondo)" strokeWidth={27} />
+          <use href="#m28" fill="none" stroke="var(--ocre)" strokeWidth={2.2} opacity={0.3} />
         </g>
       </g>
     </svg>
@@ -536,4 +536,38 @@ export function TrenzaMovil({ className }: P) {
  * es la misma que recorre la página entera hasta el pie.
  */
 export const ESPINAZO = "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2726%27 height=%27132%27 viewBox=%270 0 26 132%27%3E%3Cpath d='M19.4 -102.0C19.4 -101.0 19.5 -98.0 19.4 -96.0C19.3 -94.0 19.2 -92.0 18.9 -90.0C18.7 -88.0 18.3 -86.0 17.9 -84.0C17.5 -82.0 17.0 -80.0 16.5 -78.0C16.0 -76.0 15.4 -74.0 14.8 -72.0C14.2 -70.0 13.6 -68.0 13.0 -66.0C12.4 -64.0 11.8 -62.0 11.2 -60.0C10.6 -58.0 10.0 -56.0 9.5 -54.0C9.0 -52.0 8.5 -50.0 8.1 -48.0C7.7 -46.0 7.3 -44.0 7.1 -42.0C6.8 -40.0 6.7 -38.0 6.6 -36.0C6.5 -34.0 6.6 -31.0 6.6 -30.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.4 -102.0C19.4 -101.0 19.5 -98.0 19.4 -96.0C19.3 -94.0 19.2 -92.0 18.9 -90.0C18.7 -88.0 18.3 -86.0 17.9 -84.0C17.5 -82.0 17.0 -80.0 16.5 -78.0C16.0 -76.0 15.4 -74.0 14.8 -72.0C14.2 -70.0 13.6 -68.0 13.0 -66.0C12.4 -64.0 11.8 -62.0 11.2 -60.0C10.6 -58.0 10.0 -56.0 9.5 -54.0C9.0 -52.0 8.5 -50.0 8.1 -48.0C7.7 -46.0 7.3 -44.0 7.1 -42.0C6.8 -40.0 6.7 -38.0 6.6 -36.0C6.5 -34.0 6.6 -31.0 6.6 -30.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M19.4 30.0C19.4 31.0 19.5 34.0 19.4 36.0C19.3 38.0 19.2 40.0 18.9 42.0C18.7 44.0 18.3 46.0 17.9 48.0C17.5 50.0 17.0 52.0 16.5 54.0C16.0 56.0 15.4 58.0 14.8 60.0C14.2 62.0 13.6 64.0 13.0 66.0C12.4 68.0 11.8 70.0 11.2 72.0C10.6 74.0 10.0 76.0 9.5 78.0C9.0 80.0 8.5 82.0 8.1 84.0C7.7 86.0 7.3 88.0 7.1 90.0C6.8 92.0 6.7 94.0 6.6 96.0C6.5 98.0 6.6 101.0 6.6 102.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.4 30.0C19.4 31.0 19.5 34.0 19.4 36.0C19.3 38.0 19.2 40.0 18.9 42.0C18.7 44.0 18.3 46.0 17.9 48.0C17.5 50.0 17.0 52.0 16.5 54.0C16.0 56.0 15.4 58.0 14.8 60.0C14.2 62.0 13.6 64.0 13.0 66.0C12.4 68.0 11.8 70.0 11.2 72.0C10.6 74.0 10.0 76.0 9.5 78.0C9.0 80.0 8.5 82.0 8.1 84.0C7.7 86.0 7.3 88.0 7.1 90.0C6.8 92.0 6.7 94.0 6.6 96.0C6.5 98.0 6.6 101.0 6.6 102.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M19.4 162.0C19.4 163.0 19.5 166.0 19.4 168.0C19.3 170.0 19.2 172.0 18.9 174.0C18.7 176.0 18.3 178.0 17.9 180.0C17.5 182.0 17.0 184.0 16.5 186.0C16.0 188.0 15.4 190.0 14.8 192.0C14.2 194.0 13.6 196.0 13.0 198.0C12.4 200.0 11.8 202.0 11.2 204.0C10.6 206.0 10.0 208.0 9.5 210.0C9.0 212.0 8.5 214.0 8.1 216.0C7.7 218.0 7.3 220.0 7.1 222.0C6.8 224.0 6.7 226.0 6.6 228.0C6.5 230.0 6.6 233.0 6.6 234.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.4 162.0C19.4 163.0 19.5 166.0 19.4 168.0C19.3 170.0 19.2 172.0 18.9 174.0C18.7 176.0 18.3 178.0 17.9 180.0C17.5 182.0 17.0 184.0 16.5 186.0C16.0 188.0 15.4 190.0 14.8 192.0C14.2 194.0 13.6 196.0 13.0 198.0C12.4 200.0 11.8 202.0 11.2 204.0C10.6 206.0 10.0 208.0 9.5 210.0C9.0 212.0 8.5 214.0 8.1 216.0C7.7 218.0 7.3 220.0 7.1 222.0C6.8 224.0 6.7 226.0 6.6 228.0C6.5 230.0 6.6 233.0 6.6 234.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M18.6 -132.0C18.4 -131.0 17.9 -128.0 17.5 -126.0C17.0 -124.0 16.5 -122.0 16.0 -120.0C15.4 -118.0 14.8 -116.0 14.2 -114.0C13.6 -112.0 13.0 -110.0 12.4 -108.0C11.8 -106.0 11.2 -104.0 10.6 -102.0C10.0 -100.0 9.5 -98.0 9.0 -96.0C8.5 -94.0 8.1 -92.0 7.7 -90.0C7.4 -88.0 7.1 -86.0 6.9 -84.0C6.7 -82.0 6.5 -80.0 6.5 -78.0C6.5 -76.0 6.7 -73.0 6.7 -72.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M18.6 -132.0C18.4 -131.0 17.9 -128.0 17.5 -126.0C17.0 -124.0 16.5 -122.0 16.0 -120.0C15.4 -118.0 14.8 -116.0 14.2 -114.0C13.6 -112.0 13.0 -110.0 12.4 -108.0C11.8 -106.0 11.2 -104.0 10.6 -102.0C10.0 -100.0 9.5 -98.0 9.0 -96.0C8.5 -94.0 8.1 -92.0 7.7 -90.0C7.4 -88.0 7.1 -86.0 6.9 -84.0C6.7 -82.0 6.5 -80.0 6.5 -78.0C6.5 -76.0 6.7 -73.0 6.7 -72.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M19.5 -12.0C19.5 -11.0 19.5 -8.0 19.3 -6.0C19.2 -4.0 18.9 -2.0 18.6 0.0C18.3 2.0 17.9 4.0 17.5 6.0C17.0 8.0 16.5 10.0 16.0 12.0C15.4 14.0 14.8 16.0 14.2 18.0C13.6 20.0 13.0 22.0 12.4 24.0C11.8 26.0 11.2 28.0 10.6 30.0C10.0 32.0 9.5 34.0 9.0 36.0C8.5 38.0 8.1 40.0 7.7 42.0C7.4 44.0 7.1 46.0 6.9 48.0C6.7 50.0 6.5 52.0 6.5 54.0C6.5 56.0 6.7 59.0 6.7 60.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.5 -12.0C19.5 -11.0 19.5 -8.0 19.3 -6.0C19.2 -4.0 18.9 -2.0 18.6 0.0C18.3 2.0 17.9 4.0 17.5 6.0C17.0 8.0 16.5 10.0 16.0 12.0C15.4 14.0 14.8 16.0 14.2 18.0C13.6 20.0 13.0 22.0 12.4 24.0C11.8 26.0 11.2 28.0 10.6 30.0C10.0 32.0 9.5 34.0 9.0 36.0C8.5 38.0 8.1 40.0 7.7 42.0C7.4 44.0 7.1 46.0 6.9 48.0C6.7 50.0 6.5 52.0 6.5 54.0C6.5 56.0 6.7 59.0 6.7 60.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M19.5 120.0C19.5 121.0 19.5 124.0 19.3 126.0C19.2 128.0 18.9 130.0 18.6 132.0C18.3 134.0 17.9 136.0 17.5 138.0C17.0 140.0 16.5 142.0 16.0 144.0C15.4 146.0 14.8 148.0 14.2 150.0C13.6 152.0 13.0 154.0 12.4 156.0C11.8 158.0 11.2 160.0 10.6 162.0C10.0 164.0 9.5 166.0 9.0 168.0C8.5 170.0 8.1 172.0 7.7 174.0C7.4 176.0 7.1 178.0 6.9 180.0C6.7 182.0 6.5 184.0 6.5 186.0C6.5 188.0 6.7 191.0 6.7 192.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.5 120.0C19.5 121.0 19.5 124.0 19.3 126.0C19.2 128.0 18.9 130.0 18.6 132.0C18.3 134.0 17.9 136.0 17.5 138.0C17.0 140.0 16.5 142.0 16.0 144.0C15.4 146.0 14.8 148.0 14.2 150.0C13.6 152.0 13.0 154.0 12.4 156.0C11.8 158.0 11.2 160.0 10.6 162.0C10.0 164.0 9.5 166.0 9.0 168.0C8.5 170.0 8.1 172.0 7.7 174.0C7.4 176.0 7.1 178.0 6.9 180.0C6.7 182.0 6.5 184.0 6.5 186.0C6.5 188.0 6.7 191.0 6.7 192.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M19.5 252.0C19.5 253.0 19.5 256.0 19.3 258.0C19.2 260.0 18.7 263.0 18.6 264.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.5 252.0C19.5 253.0 19.5 256.0 19.3 258.0C19.2 260.0 18.7 263.0 18.6 264.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M7.4 -132.0C7.3 -131.0 6.8 -128.0 6.7 -126.0C6.5 -124.0 6.5 -121.0 6.5 -120.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M7.4 -132.0C7.3 -131.0 6.8 -128.0 6.7 -126.0C6.5 -124.0 6.5 -121.0 6.5 -120.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3Cpath d='M19.3 -60.0C19.3 -59.0 19.5 -56.0 19.5 -54.0C19.5 -52.0 19.3 -50.0 19.1 -48.0C18.9 -46.0 18.6 -44.0 18.3 -42.0C17.9 -40.0 17.5 -38.0 17.0 -36.0C16.5 -34.0 16.0 -32.0 15.4 -30.0C14.8 -28.0 14.2 -26.0 13.6 -24.0C13.0 -22.0 12.4 -20.0 11.8 -18.0C11.2 -16.0 10.6 -14.0 10.0 -12.0C9.5 -10.0 9.0 -8.0 8.5 -6.0C8.1 -4.0 7.7 -2.0 7.4 0.0C7.1 2.0 6.8 4.0 6.7 6.0C6.5 8.0 6.5 11.0 6.5 12.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.3 -60.0C19.3 -59.0 19.5 -56.0 19.5 -54.0C19.5 -52.0 19.3 -50.0 19.1 -48.0C18.9 -46.0 18.6 -44.0 18.3 -42.0C17.9 -40.0 17.5 -38.0 17.0 -36.0C16.5 -34.0 16.0 -32.0 15.4 -30.0C14.8 -28.0 14.2 -26.0 13.6 -24.0C13.0 -22.0 12.4 -20.0 11.8 -18.0C11.2 -16.0 10.6 -14.0 10.0 -12.0C9.5 -10.0 9.0 -8.0 8.5 -6.0C8.1 -4.0 7.7 -2.0 7.4 0.0C7.1 2.0 6.8 4.0 6.7 6.0C6.5 8.0 6.5 11.0 6.5 12.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3Cpath d='M19.3 72.0C19.3 73.0 19.5 76.0 19.5 78.0C19.5 80.0 19.3 82.0 19.1 84.0C18.9 86.0 18.6 88.0 18.3 90.0C17.9 92.0 17.5 94.0 17.0 96.0C16.5 98.0 16.0 100.0 15.4 102.0C14.8 104.0 14.2 106.0 13.6 108.0C13.0 110.0 12.4 112.0 11.8 114.0C11.2 116.0 10.6 118.0 10.0 120.0C9.5 122.0 9.0 124.0 8.5 126.0C8.1 128.0 7.7 130.0 7.4 132.0C7.1 134.0 6.8 136.0 6.7 138.0C6.5 140.0 6.5 143.0 6.5 144.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.3 72.0C19.3 73.0 19.5 76.0 19.5 78.0C19.5 80.0 19.3 82.0 19.1 84.0C18.9 86.0 18.6 88.0 18.3 90.0C17.9 92.0 17.5 94.0 17.0 96.0C16.5 98.0 16.0 100.0 15.4 102.0C14.8 104.0 14.2 106.0 13.6 108.0C13.0 110.0 12.4 112.0 11.8 114.0C11.2 116.0 10.6 118.0 10.0 120.0C9.5 122.0 9.0 124.0 8.5 126.0C8.1 128.0 7.7 130.0 7.4 132.0C7.1 134.0 6.8 136.0 6.7 138.0C6.5 140.0 6.5 143.0 6.5 144.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3Cpath d='M19.3 204.0C19.3 205.0 19.5 208.0 19.5 210.0C19.5 212.0 19.3 214.0 19.1 216.0C18.9 218.0 18.6 220.0 18.3 222.0C17.9 224.0 17.5 226.0 17.0 228.0C16.5 230.0 16.0 232.0 15.4 234.0C14.8 236.0 14.2 238.0 13.6 240.0C13.0 242.0 12.4 244.0 11.8 246.0C11.2 248.0 10.6 250.0 10.0 252.0C9.5 254.0 9.0 256.0 8.5 258.0C8.1 260.0 7.6 263.0 7.4 264.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M19.3 204.0C19.3 205.0 19.5 208.0 19.5 210.0C19.5 212.0 19.3 214.0 19.1 216.0C18.9 218.0 18.6 220.0 18.3 222.0C17.9 224.0 17.5 226.0 17.0 228.0C16.5 230.0 16.0 232.0 15.4 234.0C14.8 236.0 14.2 238.0 13.6 240.0C13.0 242.0 12.4 244.0 11.8 246.0C11.2 248.0 10.6 250.0 10.0 252.0C9.5 254.0 9.0 256.0 8.5 258.0C8.1 260.0 7.6 263.0 7.4 264.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3Cpath d='M13.0 -132.0C13.3 -131.0 14.2 -128.0 14.8 -126.0C15.4 -124.0 16.0 -122.0 16.5 -120.0C17.0 -118.0 17.5 -116.0 17.9 -114.0C18.3 -112.0 18.7 -110.0 18.9 -108.0C19.2 -106.0 19.3 -104.0 19.4 -102.0C19.5 -100.0 19.4 -97.0 19.4 -96.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M13.0 -132.0C13.3 -131.0 14.2 -128.0 14.8 -126.0C15.4 -124.0 16.0 -122.0 16.5 -120.0C17.0 -118.0 17.5 -116.0 17.9 -114.0C18.3 -112.0 18.7 -110.0 18.9 -108.0C19.2 -106.0 19.3 -104.0 19.4 -102.0C19.5 -100.0 19.4 -97.0 19.4 -96.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M6.6 -36.0C6.6 -35.0 6.5 -32.0 6.6 -30.0C6.7 -28.0 6.8 -26.0 7.1 -24.0C7.3 -22.0 7.7 -20.0 8.1 -18.0C8.5 -16.0 9.0 -14.0 9.5 -12.0C10.0 -10.0 10.6 -8.0 11.2 -6.0C11.8 -4.0 12.4 -2.0 13.0 0.0C13.6 2.0 14.2 4.0 14.8 6.0C15.4 8.0 16.0 10.0 16.5 12.0C17.0 14.0 17.5 16.0 17.9 18.0C18.3 20.0 18.7 22.0 18.9 24.0C19.2 26.0 19.3 28.0 19.4 30.0C19.5 32.0 19.4 35.0 19.4 36.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.6 -36.0C6.6 -35.0 6.5 -32.0 6.6 -30.0C6.7 -28.0 6.8 -26.0 7.1 -24.0C7.3 -22.0 7.7 -20.0 8.1 -18.0C8.5 -16.0 9.0 -14.0 9.5 -12.0C10.0 -10.0 10.6 -8.0 11.2 -6.0C11.8 -4.0 12.4 -2.0 13.0 0.0C13.6 2.0 14.2 4.0 14.8 6.0C15.4 8.0 16.0 10.0 16.5 12.0C17.0 14.0 17.5 16.0 17.9 18.0C18.3 20.0 18.7 22.0 18.9 24.0C19.2 26.0 19.3 28.0 19.4 30.0C19.5 32.0 19.4 35.0 19.4 36.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M6.6 96.0C6.6 97.0 6.5 100.0 6.6 102.0C6.7 104.0 6.8 106.0 7.1 108.0C7.3 110.0 7.7 112.0 8.1 114.0C8.5 116.0 9.0 118.0 9.5 120.0C10.0 122.0 10.6 124.0 11.2 126.0C11.8 128.0 12.4 130.0 13.0 132.0C13.6 134.0 14.2 136.0 14.8 138.0C15.4 140.0 16.0 142.0 16.5 144.0C17.0 146.0 17.5 148.0 17.9 150.0C18.3 152.0 18.7 154.0 18.9 156.0C19.2 158.0 19.3 160.0 19.4 162.0C19.5 164.0 19.4 167.0 19.4 168.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.6 96.0C6.6 97.0 6.5 100.0 6.6 102.0C6.7 104.0 6.8 106.0 7.1 108.0C7.3 110.0 7.7 112.0 8.1 114.0C8.5 116.0 9.0 118.0 9.5 120.0C10.0 122.0 10.6 124.0 11.2 126.0C11.8 128.0 12.4 130.0 13.0 132.0C13.6 134.0 14.2 136.0 14.8 138.0C15.4 140.0 16.0 142.0 16.5 144.0C17.0 146.0 17.5 148.0 17.9 150.0C18.3 152.0 18.7 154.0 18.9 156.0C19.2 158.0 19.3 160.0 19.4 162.0C19.5 164.0 19.4 167.0 19.4 168.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M6.6 228.0C6.6 229.0 6.5 232.0 6.6 234.0C6.7 236.0 6.8 238.0 7.1 240.0C7.3 242.0 7.7 244.0 8.1 246.0C8.5 248.0 9.0 250.0 9.5 252.0C10.0 254.0 10.6 256.0 11.2 258.0C11.8 260.0 12.7 263.0 13.0 264.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.6 228.0C6.6 229.0 6.5 232.0 6.6 234.0C6.7 236.0 6.8 238.0 7.1 240.0C7.3 242.0 7.7 244.0 8.1 246.0C8.5 248.0 9.0 250.0 9.5 252.0C10.0 254.0 10.6 256.0 11.2 258.0C11.8 260.0 12.7 263.0 13.0 264.0' fill='none' stroke='%23e8407f' stroke-width='7'/%3E%3Cpath d='M6.5 -78.0C6.5 -77.0 6.5 -74.0 6.7 -72.0C6.8 -70.0 7.1 -68.0 7.4 -66.0C7.7 -64.0 8.1 -62.0 8.5 -60.0C9.0 -58.0 9.5 -56.0 10.0 -54.0C10.6 -52.0 11.2 -50.0 11.8 -48.0C12.4 -46.0 13.0 -44.0 13.6 -42.0C14.2 -40.0 14.8 -38.0 15.4 -36.0C16.0 -34.0 16.5 -32.0 17.0 -30.0C17.5 -28.0 17.9 -26.0 18.3 -24.0C18.6 -22.0 18.9 -20.0 19.1 -18.0C19.3 -16.0 19.5 -14.0 19.5 -12.0C19.5 -10.0 19.3 -7.0 19.3 -6.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.5 -78.0C6.5 -77.0 6.5 -74.0 6.7 -72.0C6.8 -70.0 7.1 -68.0 7.4 -66.0C7.7 -64.0 8.1 -62.0 8.5 -60.0C9.0 -58.0 9.5 -56.0 10.0 -54.0C10.6 -52.0 11.2 -50.0 11.8 -48.0C12.4 -46.0 13.0 -44.0 13.6 -42.0C14.2 -40.0 14.8 -38.0 15.4 -36.0C16.0 -34.0 16.5 -32.0 17.0 -30.0C17.5 -28.0 17.9 -26.0 18.3 -24.0C18.6 -22.0 18.9 -20.0 19.1 -18.0C19.3 -16.0 19.5 -14.0 19.5 -12.0C19.5 -10.0 19.3 -7.0 19.3 -6.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M6.5 54.0C6.5 55.0 6.5 58.0 6.7 60.0C6.8 62.0 7.1 64.0 7.4 66.0C7.7 68.0 8.1 70.0 8.5 72.0C9.0 74.0 9.5 76.0 10.0 78.0C10.6 80.0 11.2 82.0 11.8 84.0C12.4 86.0 13.0 88.0 13.6 90.0C14.2 92.0 14.8 94.0 15.4 96.0C16.0 98.0 16.5 100.0 17.0 102.0C17.5 104.0 17.9 106.0 18.3 108.0C18.6 110.0 18.9 112.0 19.1 114.0C19.3 116.0 19.5 118.0 19.5 120.0C19.5 122.0 19.3 125.0 19.3 126.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.5 54.0C6.5 55.0 6.5 58.0 6.7 60.0C6.8 62.0 7.1 64.0 7.4 66.0C7.7 68.0 8.1 70.0 8.5 72.0C9.0 74.0 9.5 76.0 10.0 78.0C10.6 80.0 11.2 82.0 11.8 84.0C12.4 86.0 13.0 88.0 13.6 90.0C14.2 92.0 14.8 94.0 15.4 96.0C16.0 98.0 16.5 100.0 17.0 102.0C17.5 104.0 17.9 106.0 18.3 108.0C18.6 110.0 18.9 112.0 19.1 114.0C19.3 116.0 19.5 118.0 19.5 120.0C19.5 122.0 19.3 125.0 19.3 126.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M6.5 186.0C6.5 187.0 6.5 190.0 6.7 192.0C6.8 194.0 7.1 196.0 7.4 198.0C7.7 200.0 8.1 202.0 8.5 204.0C9.0 206.0 9.5 208.0 10.0 210.0C10.6 212.0 11.2 214.0 11.8 216.0C12.4 218.0 13.0 220.0 13.6 222.0C14.2 224.0 14.8 226.0 15.4 228.0C16.0 230.0 16.5 232.0 17.0 234.0C17.5 236.0 17.9 238.0 18.3 240.0C18.6 242.0 18.9 244.0 19.1 246.0C19.3 248.0 19.5 250.0 19.5 252.0C19.5 254.0 19.3 257.0 19.3 258.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.5 186.0C6.5 187.0 6.5 190.0 6.7 192.0C6.8 194.0 7.1 196.0 7.4 198.0C7.7 200.0 8.1 202.0 8.5 204.0C9.0 206.0 9.5 208.0 10.0 210.0C10.6 212.0 11.2 214.0 11.8 216.0C12.4 218.0 13.0 220.0 13.6 222.0C14.2 224.0 14.8 226.0 15.4 228.0C16.0 230.0 16.5 232.0 17.0 234.0C17.5 236.0 17.9 238.0 18.3 240.0C18.6 242.0 18.9 244.0 19.1 246.0C19.3 248.0 19.5 250.0 19.5 252.0C19.5 254.0 19.3 257.0 19.3 258.0' fill='none' stroke='%23e8e2cc' stroke-width='7'/%3E%3Cpath d='M6.7 -126.0C6.7 -125.0 6.5 -122.0 6.5 -120.0C6.5 -118.0 6.7 -116.0 6.9 -114.0C7.1 -112.0 7.4 -110.0 7.7 -108.0C8.1 -106.0 8.5 -104.0 9.0 -102.0C9.5 -100.0 10.0 -98.0 10.6 -96.0C11.2 -94.0 11.8 -92.0 12.4 -90.0C13.0 -88.0 13.6 -86.0 14.2 -84.0C14.8 -82.0 15.4 -80.0 16.0 -78.0C16.5 -76.0 17.0 -74.0 17.5 -72.0C17.9 -70.0 18.3 -68.0 18.6 -66.0C18.9 -64.0 19.2 -62.0 19.3 -60.0C19.5 -58.0 19.5 -55.0 19.5 -54.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.7 -126.0C6.7 -125.0 6.5 -122.0 6.5 -120.0C6.5 -118.0 6.7 -116.0 6.9 -114.0C7.1 -112.0 7.4 -110.0 7.7 -108.0C8.1 -106.0 8.5 -104.0 9.0 -102.0C9.5 -100.0 10.0 -98.0 10.6 -96.0C11.2 -94.0 11.8 -92.0 12.4 -90.0C13.0 -88.0 13.6 -86.0 14.2 -84.0C14.8 -82.0 15.4 -80.0 16.0 -78.0C16.5 -76.0 17.0 -74.0 17.5 -72.0C17.9 -70.0 18.3 -68.0 18.6 -66.0C18.9 -64.0 19.2 -62.0 19.3 -60.0C19.5 -58.0 19.5 -55.0 19.5 -54.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3Cpath d='M6.7 6.0C6.7 7.0 6.5 10.0 6.5 12.0C6.5 14.0 6.7 16.0 6.9 18.0C7.1 20.0 7.4 22.0 7.7 24.0C8.1 26.0 8.5 28.0 9.0 30.0C9.5 32.0 10.0 34.0 10.6 36.0C11.2 38.0 11.8 40.0 12.4 42.0C13.0 44.0 13.6 46.0 14.2 48.0C14.8 50.0 15.4 52.0 16.0 54.0C16.5 56.0 17.0 58.0 17.5 60.0C17.9 62.0 18.3 64.0 18.6 66.0C18.9 68.0 19.2 70.0 19.3 72.0C19.5 74.0 19.5 77.0 19.5 78.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.7 6.0C6.7 7.0 6.5 10.0 6.5 12.0C6.5 14.0 6.7 16.0 6.9 18.0C7.1 20.0 7.4 22.0 7.7 24.0C8.1 26.0 8.5 28.0 9.0 30.0C9.5 32.0 10.0 34.0 10.6 36.0C11.2 38.0 11.8 40.0 12.4 42.0C13.0 44.0 13.6 46.0 14.2 48.0C14.8 50.0 15.4 52.0 16.0 54.0C16.5 56.0 17.0 58.0 17.5 60.0C17.9 62.0 18.3 64.0 18.6 66.0C18.9 68.0 19.2 70.0 19.3 72.0C19.5 74.0 19.5 77.0 19.5 78.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3Cpath d='M6.7 138.0C6.7 139.0 6.5 142.0 6.5 144.0C6.5 146.0 6.7 148.0 6.9 150.0C7.1 152.0 7.4 154.0 7.7 156.0C8.1 158.0 8.5 160.0 9.0 162.0C9.5 164.0 10.0 166.0 10.6 168.0C11.2 170.0 11.8 172.0 12.4 174.0C13.0 176.0 13.6 178.0 14.2 180.0C14.8 182.0 15.4 184.0 16.0 186.0C16.5 188.0 17.0 190.0 17.5 192.0C17.9 194.0 18.3 196.0 18.6 198.0C18.9 200.0 19.2 202.0 19.3 204.0C19.5 206.0 19.5 209.0 19.5 210.0' fill='none' stroke='%2308231b' stroke-width='15'/%3E%3Cpath d='M6.7 138.0C6.7 139.0 6.5 142.0 6.5 144.0C6.5 146.0 6.7 148.0 6.9 150.0C7.1 152.0 7.4 154.0 7.7 156.0C8.1 158.0 8.5 160.0 9.0 162.0C9.5 164.0 10.0 166.0 10.6 168.0C11.2 170.0 11.8 172.0 12.4 174.0C13.0 176.0 13.6 178.0 14.2 180.0C14.8 182.0 15.4 184.0 16.0 186.0C16.5 188.0 17.0 190.0 17.5 192.0C17.9 194.0 18.3 196.0 18.6 198.0C18.9 200.0 19.2 202.0 19.3 204.0C19.5 206.0 19.5 209.0 19.5 210.0' fill='none' stroke='%23e5a052' stroke-width='7'/%3E%3C/svg%3E\")";
+/**
+ * El remate del tramo continuo. La hebra que recorre la página no termina en
+ * un corte a escuadra: se deshilacha, igual que el cabo suelto que marca cada
+ * dato que aún no existe. Es el mismo gesto, al final del recorrido.
+ */
+export function RemateEspinazo({ className }: P) {
+  const hebras = [
+    { x: 6.5, c: "var(--anilina)" },
+    { x: 13, c: "var(--fibra)" },
+    { x: 19.5, c: "var(--ocre)" },
+  ];
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 26 46"
+      preserveAspectRatio="xMidYMin meet"
+      aria-hidden="true"
+      focusable="false"
+    >
+      {hebras.map(({ x, c }, i) => (
+        <path
+          key={x}
+          d={`M${x} 0 C${x} 14 ${x + (i - 1) * 7} 20 ${x + (i - 1) * 11} 44`}
+          fill="none"
+          stroke={c}
+          strokeWidth={7 - i * 0.6}
+          strokeLinecap="butt"
+          opacity={0.9 - i * 0.12}
+        />
+      ))}
+    </svg>
+  );
+}
+
 export const ESPINAZO_PASO = 132;
