@@ -284,7 +284,7 @@ function Productos() {
           ))}
         </div>
 
-        <p className="medida mt-10 text-[0.97rem] text-fibra-honda">
+        <p className="medida mt-10 text-[0.97rem] text-fibra-media">
           Los cabos sueltos de arriba no son un descuido de diseño: son las cifras que esta
           institución todavía no ha publicado. Preferimos dejarlas deshilachadas antes que
           rellenarlas con un número que suene bien.

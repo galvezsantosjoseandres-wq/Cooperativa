@@ -1,0 +1,609 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-19T00:00:00Z",
+  "title": "Design System: Cooperativa Raíz",
+  "extensions": {
+    "colorMeta": {
+      "anilina": {
+        "role": "primary",
+        "displayName": "Anilina Fucsia",
+        "canonical": "#e8407f",
+        "tonalRamp": [
+          "#3b0d20",
+          "#5e142f",
+          "#8a1f45",
+          "#b9345f",
+          "#e8407f",
+          "#ff7fae",
+          "#ffb3ce",
+          "#ffdfea"
+        ],
+        "notes": "Baño medio de la tintura fucsia. Punzón, botón primario, numeral de paso, hebra activa del trenzado. 4.32:1 sobre anil-850 — texto grande y marcas únicamente."
+      },
+      "anilina-claro": {
+        "role": "primary",
+        "displayName": "Anilina Clara",
+        "canonical": "#ff7fae",
+        "tonalRamp": [
+          "#3b0d20",
+          "#5e142f",
+          "#8a1f45",
+          "#b9345f",
+          "#e8407f",
+          "#ff7fae",
+          "#ffb3ce",
+          "#ffdfea"
+        ],
+        "notes": "El baño que sí lee en pequeño (7.03:1 sobre anil-850). Anillo de foco global, caret, etiquetas de anuncio de estado."
+      },
+      "anilina-honda": {
+        "role": "primary",
+        "displayName": "Anilina Honda",
+        "canonical": "#b9345f",
+        "tonalRamp": [
+          "#3b0d20",
+          "#5e142f",
+          "#8a1f45",
+          "#b9345f",
+          "#e8407f",
+          "#ff7fae",
+          "#ffb3ce",
+          "#ffdfea"
+        ],
+        "notes": "Inmersión larga del mismo tinte. Sólo como hebra de la capa de atrás del trenzado."
+      },
+      "ocre": {
+        "role": "secondary",
+        "displayName": "Ocre Quemado",
+        "canonical": "#e5a052",
+        "tonalRamp": [
+          "#3a2410",
+          "#5a3818",
+          "#8a5622",
+          "#c07b33",
+          "#e5a052",
+          "#f5c78e",
+          "#fadfbe",
+          "#fdf1e3"
+        ],
+        "notes": "La segunda tintura. Reservada a lo pendiente y a lo advertido: cabo suelto, rótulo «La maquinaria», marco del aviso de demostración."
+      },
+      "ocre-tinte": {
+        "role": "secondary",
+        "displayName": "Ocre de Tinte",
+        "canonical": "#f5c78e",
+        "tonalRamp": [
+          "#3a2410",
+          "#5a3818",
+          "#8a5622",
+          "#c07b33",
+          "#e5a052",
+          "#f5c78e",
+          "#fadfbe",
+          "#fdf1e3"
+        ],
+        "notes": "El ocre subido para aguantar sobre la tierra clara. Se activa sólo por remapeo dentro de [data-tinte=\"si\"] (5.00:1 sobre anil-tinte)."
+      },
+      "ocre-hondo": {
+        "role": "secondary",
+        "displayName": "Ocre Hondo",
+        "canonical": "#c07b33",
+        "tonalRamp": [
+          "#3a2410",
+          "#5a3818",
+          "#8a5622",
+          "#c07b33",
+          "#e5a052",
+          "#f5c78e",
+          "#fadfbe",
+          "#fdf1e3"
+        ],
+        "notes": "Baño profundo del ocre. Únicamente como hebra de trenzado."
+      },
+      "anil-900": {
+        "role": "neutral",
+        "displayName": "Anil 900 — Tierra Honda",
+        "canonical": "#061c15",
+        "tonalRamp": [
+          "#061c15",
+          "#08231b",
+          "#0c3026",
+          "#114036",
+          "#17564a",
+          "#1e6f5f",
+          "#2f9b86",
+          "#7fd3c2"
+        ],
+        "notes": "Encabezado pegajoso al 92% con desenfoque de 2px, sección de gobierno, pie, canal del scrollbar, encasquillado del isotipo."
+      },
+      "anil-850": {
+        "role": "neutral",
+        "displayName": "Anil 850 — Tierra de Documento",
+        "canonical": "#08231b",
+        "tonalRamp": [
+          "#061c15",
+          "#08231b",
+          "#0c3026",
+          "#114036",
+          "#17564a",
+          "#1e6f5f",
+          "#2f9b86",
+          "#7fd3c2"
+        ],
+        "notes": "Fondo de html y body: el sobredesplazamiento nunca deja ver blanco. Portada y productos."
+      },
+      "anil-800": {
+        "role": "neutral",
+        "displayName": "Anil 800 — Hebra en Reposo",
+        "canonical": "#0c3026",
+        "tonalRamp": [
+          "#061c15",
+          "#08231b",
+          "#0c3026",
+          "#114036",
+          "#17564a",
+          "#1e6f5f",
+          "#2f9b86",
+          "#7fd3c2"
+        ],
+        "notes": "Fondo de toda hebra [data-hebra=\"debajo\"] y de la sección «Cómo te vuelves dueño»."
+      },
+      "anil-700": {
+        "role": "neutral",
+        "displayName": "Anil 700 — Hebra Encima",
+        "canonical": "#114036",
+        "tonalRamp": [
+          "#061c15",
+          "#08231b",
+          "#0c3026",
+          "#114036",
+          "#17564a",
+          "#1e6f5f",
+          "#2f9b86",
+          "#7fd3c2"
+        ],
+        "notes": "La hebra que pasa por encima y el hover de la que está debajo. El único salto de tierra que hace el sistema al interactuar."
+      },
+      "anil-600": {
+        "role": "neutral",
+        "displayName": "Anil 600 — Cromo",
+        "canonical": "#17564a",
+        "tonalRamp": [
+          "#061c15",
+          "#08231b",
+          "#0c3026",
+          "#114036",
+          "#17564a",
+          "#1e6f5f",
+          "#2f9b86",
+          "#7fd3c2"
+        ],
+        "notes": "Pulgar del scrollbar y scrollbar-color. La única superficie de cromo del navegador que el sistema pinta."
+      },
+      "anil-tinte": {
+        "role": "neutral",
+        "displayName": "Anil Tinte — La Tintura Legible",
+        "canonical": "#0f5d4b",
+        "tonalRamp": [
+          "#041f18",
+          "#07332a",
+          "#0a4539",
+          "#0f5d4b",
+          "#14775f",
+          "#1c9b7d",
+          "#3fc3a4",
+          "#a7e6d6"
+        ],
+        "notes": "El baño donde la anilina se lee como tintura y no como casi negro. Ocupa regiones enteras (mecanismo, contacto) y dispara el remapeo de tokens."
+      },
+      "fibra": {
+        "role": "neutral",
+        "displayName": "Fibra Cruda",
+        "canonical": "#e8e2cc",
+        "tonalRamp": [
+          "#2b2a20",
+          "#44422f",
+          "#5f5c43",
+          "#7d8271",
+          "#a8a48c",
+          "#cfcbb0",
+          "#e8e2cc",
+          "#f7f4e8"
+        ],
+        "notes": "La tinta. Titulares y todo texto que carga sentido. 12.78:1 sobre anil-850, 13.66:1 sobre anil-900, 6.02:1 sobre anil-tinte."
+      },
+      "fibra-media": {
+        "role": "neutral",
+        "displayName": "Fibra Media",
+        "canonical": "#cfcbb0",
+        "tonalRamp": [
+          "#2b2a20",
+          "#44422f",
+          "#5f5c43",
+          "#7d8271",
+          "#a8a48c",
+          "#cfcbb0",
+          "#e8e2cc",
+          "#f7f4e8"
+        ],
+        "notes": "Texto de apoyo y navegación. 10.12:1 sobre anil-850, 10.82:1 sobre anil-900, 4.77:1 sobre anil-tinte."
+      },
+      "fibra-honda": {
+        "role": "neutral",
+        "displayName": "Fibra Honda",
+        "canonical": "#7d8271",
+        "tonalRamp": [
+          "#2b2a20",
+          "#44422f",
+          "#5f5c43",
+          "#7d8271",
+          "#a8a48c",
+          "#cfcbb0",
+          "#e8e2cc",
+          "#f7f4e8"
+        ],
+        "notes": "MATERIAL NO TEXTUAL. Iconos de acompañamiento, la marca de 46px de la junta, placeholder, pulgar del scrollbar en hover. 4.19:1 sobre anil-850 — no califica como color de texto."
+      },
+      "borde": {
+        "role": "neutral",
+        "displayName": "Borde de Fibra",
+        "canonical": "color-mix(in oklab, #e8e2cc 16%, transparent)",
+        "tonalRamp": [
+          "color-mix(in oklab, #e8e2cc 4%, transparent)",
+          "color-mix(in oklab, #e8e2cc 8%, transparent)",
+          "color-mix(in oklab, #e8e2cc 16%, transparent)",
+          "color-mix(in oklab, #e8e2cc 22%, transparent)",
+          "color-mix(in oklab, #e8e2cc 30%, transparent)",
+          "color-mix(in oklab, #e8e2cc 38%, transparent)",
+          "color-mix(in oklab, #e8e2cc 60%, transparent)",
+          "#e8e2cc"
+        ],
+        "notes": "La fibra rebajada por mezcla. Sube a 22% dentro de [data-tinte=\"si\"]. Canto arriba y abajo de la hebra, borde de sección, reglas de lista."
+      },
+      "borde-firme": {
+        "role": "neutral",
+        "displayName": "Borde Firme",
+        "canonical": "color-mix(in oklab, #e8e2cc 30%, transparent)",
+        "tonalRamp": [
+          "color-mix(in oklab, #e8e2cc 4%, transparent)",
+          "color-mix(in oklab, #e8e2cc 8%, transparent)",
+          "color-mix(in oklab, #e8e2cc 16%, transparent)",
+          "color-mix(in oklab, #e8e2cc 22%, transparent)",
+          "color-mix(in oklab, #e8e2cc 30%, transparent)",
+          "color-mix(in oklab, #e8e2cc 38%, transparent)",
+          "color-mix(in oklab, #e8e2cc 60%, transparent)",
+          "#e8e2cc"
+        ],
+        "notes": "Marca la hebra activa y el corte del pie. Sube a 38% dentro de [data-tinte=\"si\"]."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "La tesis del primer viewport, leída dentro del trenzado. Una sola vez por página, máx. 13ch."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titular de sección, 24–30ch, con text-wrap: balance."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "La afirmación de cada hebra, el nombre de cada consejo, el rótulo de cada canal."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Piso de legibilidad de la audiencia: 17px, nunca menos. text-wrap: pretty."
+      },
+      "body-guia": {
+        "displayName": "Body de guía",
+        "purpose": "El párrafo de entrada de cada sección, cortado a 68ch por la clase de medida."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Sólo el anuncio de estado en versalitas junto a un título. Nunca encima de un titular."
+      },
+      "cabo": {
+        "displayName": "Cabo",
+        "purpose": "El texto de todo dato pendiente, en ocre, precedido por su icono deshilachado."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hebra-encima",
+        "value": "0 12px 30px -10px rgb(0 0 0 / 0.62), 0 3px 6px -3px rgb(0 0 0 / 0.45)",
+        "purpose": "La hebra activa o la acción primaria. La única sombra doble del sistema."
+      },
+      {
+        "name": "hebra-hover",
+        "value": "0 8px 22px -10px rgb(0 0 0 / 0.5)",
+        "purpose": "La hebra disponible cuando el puntero o el foco entra en ella."
+      },
+      {
+        "name": "punzon",
+        "value": "0 3px 6px rgb(0 0 0 / 0.55)",
+        "purpose": "El alfiler de 11px girado 45° que sujeta la hebra al cruzar."
+      },
+      {
+        "name": "cerco-junta",
+        "value": "0 0 0 2px var(--anil-900)",
+        "purpose": "Cerco, no sombra: aísla la rotura de 5px del espinazo para que se lea como corte."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-hebra",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Único easing del sistema: decelerado, para todo cambio de profundidad."
+      },
+      {
+        "name": "dur-hebra",
+        "value": "260ms",
+        "purpose": "Transición de transform, box-shadow, background-color y border-color de la hebra."
+      },
+      {
+        "name": "apretar-trenza",
+        "value": "apretar 1250ms cubic-bezier(0.16, 1, 0.3, 1) both",
+        "purpose": "El único momento autorizado de la página: la trenza se aprieta una vez al cargar. Sólo bajo prefers-reduced-motion: no-preference; el estado final es el de reposo."
+      },
+      {
+        "name": "correr-espinazo",
+        "value": "correr-espinazo linear both; animation-timeline: scroll(root block)",
+        "purpose": "El espinazo avanza -1320px de background-position-y a lo largo del scroll. Bajo @supports (animation-timeline: scroll())."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "40rem",
+        "purpose": "Sube el margen de página de 20px a 32px; abre las modalidades a 2 columnas."
+      },
+      {
+        "name": "md",
+        "value": "48rem",
+        "purpose": "Aparece el trenzado en dos capas y desaparece la banda móvil de 176px."
+      },
+      {
+        "name": "lg",
+        "value": "64rem",
+        "purpose": "Aparece la navegación completa; gobierno se divide en 1.05fr 1fr."
+      }
+    ],
+    "layerPolicy": "Todo el CSS propio vive en @layer base / @layer components, para que las utilidades de Tailwind v4 sigan ganando. Los tokens crudos son custom properties en :root y se exponen a Tailwind vía @theme inline.",
+    "tokenRemapping": {
+      "selector": "[data-tinte=\"si\"]",
+      "purpose": "Región entera teñida. Cambia la tierra a anil-tinte y redefine en el mismo bloque los tokens que dependen del fondo, para que el contraste y el hueco del cruce sobrevivan.",
+      "remaps": {
+        "--ocre": "var(--ocre-tinte)",
+        "--borde": "color-mix(in oklab, var(--fibra) 22%, transparent)",
+        "--borde-firme": "color-mix(in oklab, var(--fibra) 38%, transparent)",
+        "--casquillo": "var(--anil-tinte)",
+        "[data-hebra=\"debajo\"] background": "color-mix(in oklab, var(--anil-900) 34%, var(--anil-tinte))",
+        "[data-hebra=\"encima\"] background": "color-mix(in oklab, var(--fibra) 7%, var(--anil-tinte))"
+      }
+    },
+    "contrast": {
+      "target": "WCAG 2.2 AA",
+      "measured": [
+        {
+          "pair": "fibra sobre anil-850 (h1, cuerpo de portada)",
+          "ratio": "12.78:1"
+        },
+        {
+          "pair": "fibra sobre anil-900 (aviso del pie, nav)",
+          "ratio": "13.66:1"
+        },
+        {
+          "pair": "fibra sobre anil-tinte (cuerpo en región teñida)",
+          "ratio": "6.02:1"
+        },
+        {
+          "pair": "fibra-media sobre anil-900 (dd de gobierno)",
+          "ratio": "10.82:1"
+        },
+        {
+          "pair": "fibra-media sobre anil-850 (texto de apoyo)",
+          "ratio": "10.12:1"
+        },
+        {
+          "pair": "fibra-media sobre anil-tinte (apoyo atenuado)",
+          "ratio": "4.77:1"
+        },
+        {
+          "pair": "ocre-tinte sobre anil-tinte (cabo suelto en región teñida)",
+          "ratio": "5.00:1"
+        },
+        {
+          "pair": "ocre sobre anil-850 (cabo suelto, rótulo de maquinaria)",
+          "ratio": "7.49:1"
+        },
+        {
+          "pair": "anilina-claro sobre anil-850 (foco, anuncio de estado)",
+          "ratio": "7.03:1"
+        },
+        {
+          "pair": "anil-900 sobre anilina (botón primario)",
+          "ratio": "4.62:1"
+        },
+        {
+          "pair": "anilina sobre anil-850 (numeral de paso, 1.6rem/800 — texto grande)",
+          "ratio": "4.32:1"
+        },
+        {
+          "pair": "fibra-honda sobre anil-850 — POR DEBAJO DE AA PARA TEXTO",
+          "ratio": "4.19:1"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Hebra encima (acción primaria)",
+      "kind": "custom",
+      "refersTo": "hebra-encima",
+      "description": "La fila activa del sistema: fondo levantado, borde firme, sombra doble y punzón de anilina clavado al canto. La acción principal de la portada es una hebra, no un botón.",
+      "html": "<a class=\"ds-hebra ds-hebra-encima\" href=\"#asociarse\"><span class=\"ds-hebra-txt\"><span class=\"ds-hebra-tit\">Quiero asociarme</span><span class=\"ds-hebra-sub\">Los cuatro pasos reales, sin promesas de trámite instantáneo</span></span><svg class=\"ds-hebra-ico\" width=\"34\" height=\"34\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M3 17c4 0 5-10 9-10s5 10 9 10\"/><path d=\"M3 7h5.5\"/><path d=\"M15.5 7H21\"/></svg></a>",
+      "css": ".ds-hebra { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 32px; text-decoration: none; font-family: Archivo, system-ui, sans-serif; border-top: 1px solid var(--borde, rgba(232,226,204,0.16)); border-bottom: 1px solid var(--borde, rgba(232,226,204,0.16)); transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1), background-color 260ms cubic-bezier(0.16,1,0.3,1), border-color 260ms cubic-bezier(0.16,1,0.3,1); } .ds-hebra::after { content: \"\"; position: absolute; inset: 0; pointer-events: none; background-image: repeating-linear-gradient(180deg, rgba(232,226,204,0.03) 0 1px, transparent 1px 12px); } .ds-hebra-encima { background: var(--anil-700, #114036); border-color: var(--borde-firme, rgba(232,226,204,0.30)); box-shadow: 0 12px 30px -10px rgb(0 0 0 / 0.62), 0 3px 6px -3px rgb(0 0 0 / 0.45); transform: translateY(-2px); } .ds-hebra-encima::before { content: \"\"; position: absolute; left: 26px; top: -6px; width: 11px; height: 11px; rotate: 45deg; background: var(--anilina, #e8407f); border: 1px solid var(--anil-850, #08231b); box-shadow: 0 3px 6px rgb(0 0 0 / 0.55); } .ds-hebra-tit { display: block; font-family: \"Bricolage Grotesque\", system-ui, sans-serif; font-weight: 700; font-size: 1.7rem; line-height: 1.15; letter-spacing: -0.028em; color: var(--fibra, #e8e2cc); } .ds-hebra-sub { display: block; margin-top: 6px; font-size: 1rem; line-height: 1.5; color: var(--fibra-media, #cfcbb0); } .ds-hebra-ico { flex: none; color: var(--anilina-claro, #ff7fae); transition: transform 260ms cubic-bezier(0.16,1,0.3,1); } .ds-hebra-encima:hover .ds-hebra-ico { transform: translateX(4px); } .ds-hebra:focus-visible { outline: 2px solid var(--anilina-claro, #ff7fae); outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Hebra debajo (disponible)",
+      "kind": "custom",
+      "refersTo": "hebra-debajo",
+      "description": "La fila en reposo: hundida sobre anil-800. Al recibir puntero o foco sube a anil-700, endurece el borde, se levanta 2px y toma la sombra de hover.",
+      "html": "<a class=\"ds-hebra2\" href=\"#socio\"><span class=\"ds-hebra2-tit\">Primero explícame qué es una cooperativa</span><svg class=\"ds-hebra2-ico\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M12 3.5l7 3.5-7 3.5-7-3.5z\"/><path d=\"M5 11.5l7 3.5 7-3.5\"/><path d=\"M5 16l7 3.5 7-3.5\"/></svg></a>",
+      "css": ".ds-hebra2 { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 32px; text-decoration: none; font-family: Archivo, system-ui, sans-serif; background: var(--anil-800, #0c3026); border-top: 1px solid var(--borde, rgba(232,226,204,0.16)); border-bottom: 1px solid var(--borde, rgba(232,226,204,0.16)); transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1), background-color 260ms cubic-bezier(0.16,1,0.3,1), border-color 260ms cubic-bezier(0.16,1,0.3,1); } .ds-hebra2::after { content: \"\"; position: absolute; inset: 0; pointer-events: none; background-image: repeating-linear-gradient(180deg, rgba(232,226,204,0.03) 0 1px, transparent 1px 12px); } .ds-hebra2-tit { font-size: 1.06rem; font-weight: 600; color: var(--fibra, #e8e2cc); } .ds-hebra2-ico { flex: none; color: var(--fibra-honda, #7d8271); } .ds-hebra2:hover, .ds-hebra2:focus-within { background: var(--anil-700, #114036); border-color: var(--borde-firme, rgba(232,226,204,0.30)); transform: translateY(-2px); box-shadow: 0 8px 22px -10px rgb(0 0 0 / 0.5); } .ds-hebra2:focus-visible { outline: 2px solid var(--anilina-claro, #ff7fae); outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Botón primario de anilina",
+      "kind": "button",
+      "refersTo": "boton-anilina",
+      "description": "El único botón relleno de la página, en el encabezado pegajoso, y sólo para la acción de asociarse. Radio 0; el hover levanta 2px sin cambiar el relleno.",
+      "html": "<a class=\"ds-btn-anilina\" href=\"#asociarse\">Cómo asociarse</a>",
+      "css": ".ds-btn-anilina { display: inline-block; background: var(--anilina, #e8407f); color: var(--anil-900, #061c15); font-family: Archivo, system-ui, sans-serif; font-size: 0.95rem; font-weight: 700; line-height: 1; text-decoration: none; padding: 10px 16px; border: none; border-radius: 0; transition: transform 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-anilina:hover { transform: translateY(-2px); } .ds-btn-anilina:active { transform: translateY(0); } .ds-btn-anilina:focus-visible { outline: 2px solid var(--anilina-claro, #ff7fae); outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Cabo suelto",
+      "kind": "chip",
+      "refersTo": "cabo",
+      "description": "La marca de dato inexistente: icono de hebra deshilachada más texto en ocre, con nota para lector de pantalla. Va donde iría una tasa, un monto, un teléfono o un estado de documento. No es un placeholder gris: es contenido que declara su propia ausencia.",
+      "html": "<span class=\"ds-cabo\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M2 12h9\"/><path d=\"M11 12l8-4.5\"/><path d=\"M11 12l8.5 1\"/><path d=\"M11 12l7 5.5\"/></svg><span>Tasa pendiente de publicación</span></span>",
+      "css": ".ds-cabo { display: inline-flex; align-items: center; gap: 0.5ch; color: var(--ocre, #e5a052); font-family: Archivo, system-ui, sans-serif; font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.01em; } .ds-cabo svg { flex: none; }"
+    },
+    {
+      "name": "Navegación del encabezado",
+      "kind": "nav",
+      "refersTo": "nav-enlace",
+      "description": "Encabezado pegajoso en anil-900 al 92% con desenfoque de 2px: isotipo tejido, nombre en display 800, enlaces en fibra-media y la acción primaria siempre visible. Sin indicador de sección activa: la posición la da el espinazo.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-marca\" href=\"#contenido\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 34 34\" aria-hidden=\"true\"><line x1=\"11\" y1=\"1.5\" x2=\"11\" y2=\"32.5\" stroke=\"currentColor\" stroke-width=\"7\"/><line x1=\"23\" y1=\"1.5\" x2=\"23\" y2=\"32.5\" stroke=\"currentColor\" stroke-width=\"7\"/><line x1=\"11\" y1=\"6.3\" x2=\"11\" y2=\"15.7\" stroke=\"#061c15\" stroke-width=\"11.4\"/><line x1=\"1.5\" y1=\"11\" x2=\"32.5\" y2=\"11\" stroke=\"currentColor\" stroke-width=\"7\"/><line x1=\"23\" y1=\"6.9\" x2=\"23\" y2=\"15.1\" stroke=\"currentColor\" stroke-width=\"7\"/><line x1=\"23\" y1=\"18.3\" x2=\"23\" y2=\"27.7\" stroke=\"#061c15\" stroke-width=\"11.4\"/><line x1=\"1.5\" y1=\"23\" x2=\"32.5\" y2=\"23\" stroke=\"currentColor\" stroke-width=\"7\"/><line x1=\"11\" y1=\"18.9\" x2=\"11\" y2=\"27.1\" stroke=\"currentColor\" stroke-width=\"7\"/></svg><span class=\"ds-nav-nombre\">Cooperativa Raíz</span></a><nav class=\"ds-nav-lista\"><a href=\"#socio\">El socio</a><a href=\"#productos\">Productos</a><a href=\"#gobierno\">Gobierno</a><a href=\"#contacto\">Contacto</a></nav><a class=\"ds-btn-anilina2\" href=\"#asociarse\">Cómo asociarse</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 24px; padding: 14px 32px; background: color-mix(in srgb, var(--anil-900, #061c15) 92%, transparent); backdrop-filter: blur(2px); border-bottom: 1px solid var(--borde, rgba(232,226,204,0.16)); font-family: Archivo, system-ui, sans-serif; } .ds-nav-marca { display: flex; align-items: center; gap: 10px; color: var(--fibra, #e8e2cc); text-decoration: none; } .ds-nav-nombre { font-family: \"Bricolage Grotesque\", system-ui, sans-serif; font-size: 1.32rem; font-weight: 800; line-height: 1; letter-spacing: -0.03em; } .ds-nav-lista { margin-left: auto; display: flex; gap: 4px; } .ds-nav-lista a { padding: 8px 12px; font-size: 0.95rem; font-weight: 500; color: var(--fibra-media, #cfcbb0); text-decoration: none; transition: color 200ms; } .ds-nav-lista a:hover { color: var(--fibra, #e8e2cc); } .ds-btn-anilina2 { background: var(--anilina, #e8407f); color: var(--anil-900, #061c15); font-size: 0.95rem; font-weight: 700; line-height: 1; text-decoration: none; padding: 10px 16px; border-radius: 0; transition: transform 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-anilina2:hover { transform: translateY(-2px); } .ds-nav a:focus-visible { outline: 2px solid var(--anilina-claro, #ff7fae); outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Región teñida con trama",
+      "kind": "card",
+      "refersTo": "region-tinte",
+      "description": "El suelo tejido de una sección sobre la tierra clara: hebras horizontales completas y verticales enmascaradas en tablero, de modo que el cruce alterna de verdad. El bloque remapea ocre, borde, borde-firme y casquillo para que el contraste sobreviva al cambio de fondo.",
+      "html": "<section class=\"ds-trama\" data-tinte=\"si\"><h2 class=\"ds-trama-h2\">Aquí no hay clientes. Hay dueños.</h2><p class=\"ds-trama-p\">Esa no es una frase de campaña: es la figura jurídica.</p><div class=\"ds-junta\"></div><p class=\"ds-trama-maq\"><strong>La maquinaria. </strong>Un socio, un voto, sin importar cuánto tenga ahorrado.</p></section>",
+      "css": ".ds-trama { position: relative; isolation: isolate; padding: 56px 32px; background-color: var(--anil-tinte, #0f5d4b); --ocre: var(--ocre-tinte, #f5c78e); --borde: color-mix(in oklab, var(--fibra, #e8e2cc) 22%, transparent); --borde-firme: color-mix(in oklab, var(--fibra, #e8e2cc) 38%, transparent); --casquillo: var(--anil-tinte, #0f5d4b); font-family: Archivo, system-ui, sans-serif; } .ds-trama::before, .ds-trama::after { content: \"\"; position: absolute; inset: 0; z-index: -1; pointer-events: none; } .ds-trama::before { background-image: repeating-linear-gradient(180deg, color-mix(in oklab, var(--fibra, #e8e2cc) 4.5%, transparent) 0 13px, transparent 13px 20px); } .ds-trama::after { background-image: repeating-linear-gradient(90deg, color-mix(in oklab, var(--fibra, #e8e2cc) 7%, transparent) 0 13px, transparent 13px 20px); mask-image: repeating-conic-gradient(from 0deg at 50% 50%, #000 0deg 90deg, transparent 90deg 180deg); mask-size: 40px 40px; } .ds-trama-h2 { margin: 0; font-family: \"Bricolage Grotesque\", system-ui, sans-serif; font-size: 2.2rem; font-weight: 700; line-height: 1.02; letter-spacing: -0.028em; text-wrap: balance; color: var(--fibra, #e8e2cc); } .ds-trama-p { max-width: 68ch; margin: 24px 0 0; font-size: 1.08rem; line-height: 1.6; color: var(--fibra, #e8e2cc); } .ds-junta { position: relative; height: 1px; margin: 28px 0 20px; background: var(--borde); } .ds-junta::after { content: \"\"; position: absolute; left: 0; top: 50%; width: 46px; height: 3px; translate: 0 -50%; background: var(--fibra-honda, #7d8271); } .ds-trama-maq { max-width: 46ch; margin: 0; font-size: 0.97rem; line-height: 1.58; color: var(--fibra-media, #cfcbb0); } .ds-trama-maq strong { font-weight: 600; color: var(--ocre); }"
+    },
+    {
+      "name": "Disclosure de producto",
+      "kind": "custom",
+      "refersTo": "hebra-debajo",
+      "description": "details nativo montado sobre una hebra en reposo, con el marcador del navegador suprimido. El summary anuncia qué va a aparecer y cuánto antes de abrirlo; al abrir, reglas finas de 1px y un cabo suelto al pie.",
+      "html": "<details class=\"ds-det\"><summary><span class=\"ds-det-fila\"><span class=\"ds-det-tit\">Ahorro</span><span class=\"ds-det-anuncio\"><span class=\"ds-det-abre\">Abre 3 modalidades</span><span class=\"ds-det-cierra\">Cierra</span></span></span><span class=\"ds-det-res\">Tu ahorro financia el crédito de otro socio.</span></summary><dl class=\"ds-det-dl\"><div><dt>Cuenta de aportaciones</dt><dd>Es tu parte de la institución y lo que te da voz en la asamblea.</dd></div><div><dt>Ahorro a la vista</dt><dd>Disponible cuando lo necesites, sin plazo.</dd></div></dl><p class=\"ds-det-pie\"><span class=\"ds-cabo2\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M2 12h9\"/><path d=\"M11 12l8-4.5\"/><path d=\"M11 12l8.5 1\"/><path d=\"M11 12l7 5.5\"/></svg><span>Rendimiento pendiente de publicación</span></span></p></details>",
+      "css": ".ds-det { position: relative; display: block; padding: 20px 32px; background: var(--anil-800, #0c3026); border-top: 1px solid var(--borde, rgba(232,226,204,0.16)); border-bottom: 1px solid var(--borde, rgba(232,226,204,0.16)); font-family: Archivo, system-ui, sans-serif; transition: background-color 260ms cubic-bezier(0.16,1,0.3,1), border-color 260ms cubic-bezier(0.16,1,0.3,1); } .ds-det:hover { background: var(--anil-700, #114036); border-color: var(--borde-firme, rgba(232,226,204,0.30)); } .ds-det > summary { cursor: pointer; list-style: none; } .ds-det > summary::-webkit-details-marker { display: none; } .ds-det > summary:focus-visible { outline: 2px solid var(--anilina-claro, #ff7fae); outline-offset: 3px; border-radius: 1px; } .ds-det-fila { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; } .ds-det-tit { font-family: \"Bricolage Grotesque\", system-ui, sans-serif; font-size: 2rem; font-weight: 700; line-height: 1; letter-spacing: -0.028em; color: var(--fibra, #e8e2cc); } .ds-det-anuncio { font-size: 0.92rem; font-weight: 600; letter-spacing: 0.025em; text-transform: uppercase; color: var(--anilina-claro, #ff7fae); } .ds-det[open] .ds-det-abre { display: none; } .ds-det-cierra { display: none; } .ds-det[open] .ds-det-cierra { display: inline; } .ds-det-res { display: block; max-width: 62ch; margin-top: 12px; font-size: 1.02rem; line-height: 1.6; color: var(--fibra-media, #cfcbb0); } .ds-det-dl { display: grid; grid-template-columns: 1fr 1fr; margin: 28px 0 0; border-top: 1px solid var(--borde, rgba(232,226,204,0.16)); } .ds-det-dl > div { padding: 20px 24px 20px 0; border-bottom: 1px solid var(--borde, rgba(232,226,204,0.16)); } .ds-det-dl > div:nth-child(odd) { border-right: 1px solid var(--borde, rgba(232,226,204,0.16)); padding-right: 32px; } .ds-det-dl > div:nth-child(even) { padding-left: 32px; } .ds-det-dl dt { font-size: 1.04rem; font-weight: 600; color: var(--fibra, #e8e2cc); } .ds-det-dl dd { max-width: 42ch; margin: 6px 0 0; font-size: 0.96rem; line-height: 1.6; color: var(--fibra-media, #cfcbb0); } .ds-det-pie { margin: 24px 0 0; } .ds-cabo2 { display: inline-flex; align-items: center; gap: 0.5ch; color: var(--ocre, #e5a052); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.01em; } .ds-cabo2 svg { flex: none; }"
+    },
+    {
+      "name": "Aviso de demostración",
+      "kind": "card",
+      "refersTo": "aviso-ocre",
+      "description": "El único bloque enmarcado del sistema: marco de 1px en ocre al 45% sobre la tierra más honda, sin relleno propio y sin radio. Lleva la declaración obligatoria de que la institución no existe.",
+      "html": "<div class=\"ds-aviso\"><p><strong>Esta web es una demostración de diseño.</strong> «Cooperativa Raíz» es una marca inventada para este proyecto: no existe como institución, no capta ahorros y no otorga créditos.</p></div>",
+      "css": ".ds-aviso { background: var(--anil-900, #061c15); border: 1px solid color-mix(in srgb, var(--ocre, #e5a052) 45%, transparent); border-radius: 0; padding: 20px; font-family: Archivo, system-ui, sans-serif; } .ds-aviso p { max-width: 78ch; margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--fibra-media, #cfcbb0); } .ds-aviso strong { font-weight: 700; color: var(--ocre, #e5a052); }"
+    },
+    {
+      "name": "Junta del espinazo",
+      "kind": "custom",
+      "refersTo": "region-tinte",
+      "description": "La rotura deliberada del tramo continuo en la frontera de cada sección: 5px de fibra con cerco de 2px en la tierra más honda, sobre el espinazo que recorre el borde izquierdo de la página.",
+      "html": "<div class=\"ds-esp-caja\"><span class=\"ds-esp\"></span><span class=\"ds-esp-junta\"></span></div>",
+      "css": ".ds-esp-caja { position: relative; height: 180px; background: var(--anil-850, #08231b); } .ds-esp { position: absolute; top: 0; bottom: 0; left: 12px; width: 26px; z-index: 5; background-repeat: repeat-y; background-position: center top; background-size: 100% 132px; background-image: repeating-linear-gradient(180deg, var(--anilina, #e8407f) 0 7px, var(--fibra, #e8e2cc) 7px 14px, var(--ocre, #e5a052) 14px 21px, var(--anil-850, #08231b) 21px 24px); } .ds-esp-junta { position: absolute; top: 60px; left: 12px; width: 26px; height: 5px; background: var(--fibra, #e8e2cc); box-shadow: 0 0 0 2px var(--anil-900, #061c15); z-index: 6; pointer-events: none; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "La Pleita",
+    "overview": "La pleita es el trenzado de fibra de palma dominicano: hebras planas, cortadas a filo, que por separado no cargan nada y trenzadas cargan una casa. Este sistema no ilustra la pleita, la construye: el trenzado del primer viewport, la trama de fondo, el espinazo que recorre la página y las filas de acción son todos el mismo material, dibujado en código con cruces reales donde una hebra pasa por encima de otra y le abre el hueco al pasar. Con todo el contenido retirado, la página sigue siendo reconocible.\n\nEl mundo es oscuro y saturado, no oscuro y neutro. El verde anilina ocupa regiones enteras —no acentos— y cambia de baño al cambiar de sección; la tinta es fibra cruda, un hueso cálido, nunca blanco puro. Los acentos son dos tinturas, fucsia de anilina y ocre quemado, y se usan por inmersión: cada color existe en varios baños de la misma tintura, no en mezclas arbitrarias. La densidad es alta en texto y baja en cromo: no hay tarjetas flotando en una rejilla, hay hebras apiladas con 12px de aire entre ellas y reglas finas de 1px por dentro.\n\nRechazo confirmado por el contrato de dirección y sostenido por el build: el surco del sector financiero —rejilla de tarjetas iguales con iconito, héroe de cifra grande, azul corporativo con foto de familia sonriendo— no entra aquí. Tampoco entra el relleno: donde no hay dato, se dibuja un cabo suelto deshilachado, nunca un número plausible.",
+    "keyCharacteristics": [
+      "Verde anilina en regiones completas, con baños que cambian por sección (anil-900 → anil-tinte).",
+      "Cero radios: todo canto es recto porque la fibra se corta a filo.",
+      "Todo estado lleva marca física —punzón, levantamiento, hundido, deshilachado— nunca solo tono.",
+      "Un solo tramo continuo (el espinazo) recorre la página; cada rotura es una junta deliberada.",
+      "Trama, trenzado, isotipo e iconos dibujados a mano en SVG; sin glifos, sin emoji, sin librería de iconos.",
+      "Toda cifra inexistente se muestra como cabo suelto, con su equivalente para lectores de pantalla."
+    ],
+    "rules": [
+      {
+        "name": "La Regla del Baño",
+        "body": "Un color nuevo se obtiene sumergiendo más tiempo una tintura que ya existe, nunca mezclando dos. Toda variante es <tintura> / <tintura>-claro / <tintura>-hondo; si un tono no cabe en esa familia, no entra en el sistema.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de la Región Teñida",
+        "body": "Al cambiar la tierra se cambian los tokens que dependen de ella, no los textos. [data-tinte=\"si\"] pinta la región con anil-tinte y remapea en el mismo sitio --ocre → ocre-tinte, --borde 16% → 22%, --borde-firme 30% → 38% y --casquillo → anil-tinte, de modo que el contraste y el hueco del cruce sobreviven al cambio de fondo. Cualquier tierra nueva se introduce con su propio bloque de remapeo o no se introduce.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de la Fibra Honda",
+        "body": "fibra-honda dibuja, no habla. Iconos, reglas y marcas físicas sí; texto legible nunca.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Piso de 17px",
+        "body": "El cuerpo arranca en 1.0625rem y el texto denso —requisitos, detalles de modalidad, notas al pie— no baja de 0.95rem. La audiencia incluye lectores mayores en pantalla pequeña; el tamaño no se negocia por composición.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla de la Medida",
+        "body": "Todo bloque de prosa lleva su tope de línea: 68ch para la prosa de sección, 42–62ch para el texto dentro de una hebra. Ninguna línea cruza el ancho del contenedor.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla de las Versalitas Cortas",
+        "body": "Las versalitas solo existen como anuncio de estado al lado de un título, en línea de base compartida con él. Nunca encima de un titular, nunca como categoría: un rótulo en versalitas sobre un título es un eyebrow, y este mundo no los usa.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Espinazo",
+        "body": "Un solo tramo de trenza de longitud de onda exacta (26×132px, repetido en vertical) recorre el main completo por el borde izquierdo, por encima del fondo de las secciones. Recorre el scroll con animation-timeline: scroll(root block), lleva una junta en cada frontera de sección y termina deshilachado, no a escuadra. Toda sección nueva hereda su junta.",
+        "section": "layout"
+      },
+      {
+        "name": "La Regla del Tejido Antes que la Sombra",
+        "body": "La profundidad se declara cortando la hebra y pintando el encasquillado. La sombra es confirmación, nunca la única prueba: si se quitan todas las sombras, el cruce debe seguir leyéndose.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regla del Canto Recto",
+        "body": "Radio 0 en toda superficie; remate a escuadra en todo trazo. Un borde redondeado o un stroke-linecap: round es material equivocado, no una variante.",
+        "section": "shapes"
+      },
+      {
+        "name": "La Regla de la Regla Fina",
+        "body": "Dentro de una hebra no entra otra hebra. La jerarquía interna se dibuja con reglas de 1px sobre borde, de modo que el suelo de la hebra se ve a través.",
+        "section": "shapes"
+      },
+      {
+        "name": "La Regla del Estado con Marca",
+        "body": "Ningún estado se distingue solo por tono. Activo = punzón + levantamiento + cambio de tierra. Disponible = hundido. Pendiente = deshilachado. Si el cambio se puede describir únicamente como «otro color», falta la marca física.",
+        "section": "components"
+      },
+      {
+        "name": "La Regla del Anuncio",
+        "body": "Toda interacción que cambia contenido se telegrafía antes: el control dice qué va a aparecer y cuánto, no «Ver más».",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do declarar el estado de toda fila accionable con data-hebra=\"encima\" | \"debajo\" y dejar que el sistema aporte punzón, levantamiento y sombra.",
+      "Do marcar toda región de tierra clara con [data-tinte=\"si\"] para que --ocre, --borde, --borde-firme y --casquillo se remapeen y el contraste no se caiga.",
+      "Do dibujar todo dato inexistente como cabo suelto, con su nota para lector de pantalla.",
+      "Do mantener el cuerpo en 1.0625rem o más y todo bloque de prosa con su tope de medida (68ch de sección, 42–62ch dentro de una hebra).",
+      "Do dar a cada sección nueva su borde superior de 1px y su junta-espinazo.",
+      "Do dibujar cualquier icono nuevo a mano en el juego de la casa: lienzo 24, trazo 1.7, remates butt y miter, currentColor.",
+      "Do dejar todo el CSS propio dentro de @layer base / @layer components, para que las utilidades de Tailwind sigan ganando.",
+      "Do verificar 4.5:1 con la tierra real de la sección antes de usar un token de texto; la misma tinta cambia de 12.78:1 sobre anil-850 a 6.02:1 sobre anil-tinte."
+    ],
+    "donts": [
+      "Don't usar fibra-honda como color de texto: queda en 4.19:1 sobre anil-850 y 3.62:1 sobre anil-800. Es color de icono, de regla y de marca.",
+      "Don't usar anilina para texto pequeño (4.32:1 sobre anil-850); para texto que deba leerse en cuerpo va anilina-claro.",
+      "Don't redondear nada ni usar stroke-linecap: round: el radio es 0 y el remate es recto.",
+      "Don't rodear una hebra con un borde completo; lleva canto arriba y abajo, y corte a los lados.",
+      "Don't anidar una hebra dentro de otra ni convertir un grupo de hebras en una rejilla de tarjetas iguales con su iconito.",
+      "Don't poner un rótulo en versalitas encima de un titular: las versalitas solo existen como anuncio de estado en la línea de base del título.",
+      "Don't usar sombra de desplazamiento duro; las sombras de este sistema son difusas, con luz de arriba, y solo sobre la hebra activa.",
+      "Don't usar glifos unicode, emoji o una librería de iconos en lugar del juego dibujado.",
+      "Don't introducir un color que no sea otro baño de una tintura existente.",
+      "Don't añadir movimiento: el único momento autorizado es el apriete de la trenza (una vez, 1250ms) y el avance del espinazo con el scroll, ambos bajo prefers-reduced-motion: no-preference y ambos con el estado final visible sin animación.",
+      "Don't rellenar una cifra ausente con un número plausible ni con un guion gris."
+    ]
+  }
+}

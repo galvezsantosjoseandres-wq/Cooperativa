@@ -147,8 +147,10 @@
     font-variant-numeric: tabular-nums;
     font-feature-settings: "tnum" 1;
   }
+  /* fibra-honda es material no textual (icono, regla, marca): como texto
+     se queda en 4.19:1, por debajo de AA. El placeholder es texto. */
   ::placeholder {
-    color: var(--fibra-honda);
+    color: var(--fibra-media);
     opacity: 1;
   }
 
