@@ -1,4 +1,9 @@
-import { TrenzaHorizontal, TrenzaVertical } from "@/components/trenza";
+import {
+  ESPINAZO,
+  TrenzaFondo,
+  TrenzaFrente,
+  TrenzaMovil,
+} from "@/components/trenza";
 import {
   Cabo,
   IconoAsamblea,
@@ -32,15 +37,13 @@ export default function Inicio() {
       <Encabezado />
 
       <main id="contenido" className="relative flex-1">
-        {/* El espinazo: una sola hebra recorre la página entera y se cierra al bajar */}
+        {/* El espinazo: la MISMA hebra del primer viewport recorriendo la
+            página entera. Va por encima del fondo de las secciones, y cada
+            frontera lleva su junta: la rotura es deliberada, no un corte. */}
         <div
           aria-hidden="true"
-          className="espinazo trama pointer-events-none absolute top-0 bottom-0 left-5 hidden w-[26px] lg:block"
-          style={{
-            ["--hebra" as string]: "7px",
-            ["--trama-v" as string]: "color-mix(in oklab, var(--fibra) 14%, transparent)",
-            ["--trama-h" as string]: "color-mix(in oklab, var(--fibra) 8%, transparent)",
-          }}
+          className="espinazo pointer-events-none absolute top-0 bottom-0 left-1 w-[14px] opacity-70 sm:left-3 sm:w-[26px] sm:opacity-100"
+          style={{ backgroundImage: ESPINAZO, backgroundSize: "100% 132px" }}
         />
 
         <Portada />
@@ -53,6 +56,16 @@ export default function Inicio() {
 
       <PieDePagina />
     </>
+  );
+}
+
+/** La rotura deliberada del tramo continuo, en la frontera de cada sección. */
+function JuntaEspinazo() {
+  return (
+    <span
+      aria-hidden="true"
+      className="junta-espinazo absolute left-1 w-[14px] sm:left-3 sm:w-[26px]"
+    />
   );
 }
 
@@ -101,60 +114,62 @@ function Encabezado() {
 function Portada() {
   return (
     <section className="relative overflow-hidden border-b border-borde bg-anil-850">
-      {/* En móvil la trenza pierde el eje vertical, nunca el grosor */}
-      <div className="relative h-[168px] overflow-hidden md:hidden">
-        <TrenzaHorizontal className="absolute inset-0 h-full w-full" />
+      {/* En móvil la trenza pierde el eje, nunca el grosor */}
+      <div className="relative h-[176px] overflow-hidden md:hidden">
+        <TrenzaMovil className="absolute inset-0 h-full w-full" />
       </div>
 
-      <div className="grid md:grid-cols-[clamp(168px,18vw,272px)_1fr]">
-        {/* La cabeza del espinazo: la misma hebra que luego recorre la página */}
-        <div className="relative hidden overflow-hidden md:block">
-          <TrenzaVertical className="absolute inset-0 h-full w-full" />
+      <div className="relative isolate md:min-h-[min(78vh,720px)]">
+        {/* Capa de atrás del trenzado */}
+        <TrenzaFondo className="absolute inset-0 -z-10 hidden h-full w-full md:block" />
+
+        <div className="relative z-0 mx-auto max-w-[1240px] px-6 pt-[clamp(3.5rem,8vw,7rem)] pb-[clamp(4rem,9vw,7.5rem)] sm:px-8 md:pl-[clamp(4.5rem,7vw,8rem)]">
+          <h1 className="max-w-[13ch] font-display text-[clamp(2.5rem,6.2vw,5.2rem)] leading-[1.08] font-extrabold">
+            {marca.tesis}
+          </h1>
+
+          <p className="mt-8 max-w-[46ch] md:mt-16 text-[clamp(1.08rem,1.55vw,1.36rem)] leading-[1.5] text-fibra">
+            {marca.bajada}
+          </p>
         </div>
 
-        <div className="px-5 pt-[clamp(3.5rem,9vw,7rem)] pb-[clamp(4rem,9vw,7.5rem)] sm:px-8 md:pl-[clamp(2.5rem,4vw,4.5rem)]">
-          <div className="max-w-[900px]">
-            <h1 className="max-w-[16ch] font-display text-[clamp(2.6rem,6.4vw,5.4rem)] font-extrabold">
-              {marca.tesis}
-            </h1>
+        {/* Capa de delante: estas hebras pasan POR ENCIMA del titular.
+            Sin eventos de puntero, para no robar los clics de abajo. */}
+        <TrenzaFrente className="pointer-events-none absolute inset-0 z-10 hidden h-full w-full md:block" />
+      </div>
 
-            <p className="medida mt-7 text-[clamp(1.08rem,1.55vw,1.36rem)] leading-[1.5] text-fibra">
-              {marca.bajada}
-            </p>
+      {/* La acción primaria sale del trenzado, no flota aparte */}
+      <div className="relative z-20 mx-auto max-w-[1240px] px-6 pb-[clamp(3.5rem,8vw,6rem)] sm:px-8 md:-mt-[clamp(3rem,7vw,7.5rem)] md:pl-[clamp(4.5rem,7vw,8rem)]">
+        <div className="flex max-w-[700px] flex-col gap-3">
+          <a
+            href="#asociarse"
+            data-hebra="encima"
+            className="group flex items-center justify-between gap-5 px-6 py-6 no-underline sm:px-8"
+          >
+            <span className="min-w-0">
+              <span className="block font-display text-[clamp(1.3rem,2.4vw,1.7rem)] leading-tight font-bold text-fibra">
+                Quiero asociarme
+              </span>
+              <span className="mt-1.5 block text-[1rem] text-fibra-media">
+                Los cuatro pasos reales, sin promesas de trámite instantáneo
+              </span>
+            </span>
+            <IconoCruce
+              size={34}
+              className="shrink-0 text-anilina-claro transition-transform group-hover:translate-x-1"
+            />
+          </a>
 
-            {/* La acción primaria vive en la hebra que pasa por encima */}
-            <div className="mt-12 flex max-w-[700px] flex-col gap-3">
-              <a
-                href="#asociarse"
-                data-hebra="encima"
-                className="group flex items-center justify-between gap-5 px-6 py-6 no-underline sm:px-8"
-              >
-                <span className="min-w-0">
-                  <span className="block font-display text-[clamp(1.3rem,2.4vw,1.7rem)] leading-tight font-bold text-fibra">
-                    Quiero asociarme
-                  </span>
-                  <span className="mt-1.5 block text-[1rem] text-fibra-media">
-                    Los cuatro pasos reales, sin promesas de trámite instantáneo
-                  </span>
-                </span>
-                <IconoCruce
-                  size={34}
-                  className="shrink-0 text-anilina-claro transition-transform group-hover:translate-x-1"
-                />
-              </a>
-
-              <a
-                href="#socio"
-                data-hebra="debajo"
-                className="flex items-center justify-between gap-5 px-6 py-5 no-underline sm:px-8"
-              >
-                <span className="text-[1.06rem] font-semibold text-fibra">
-                  Primero explícame qué es una cooperativa
-                </span>
-                <IconoAsamblea size={28} className="shrink-0 text-fibra-honda" />
-              </a>
-            </div>
-          </div>
+          <a
+            href="#socio"
+            data-hebra="debajo"
+            className="flex items-center justify-between gap-5 px-6 py-5 no-underline sm:px-8"
+          >
+            <span className="text-[1.06rem] font-semibold text-fibra">
+              Primero explícame qué es una cooperativa
+            </span>
+            <IconoAsamblea size={28} className="shrink-0 text-fibra-honda" />
+          </a>
         </div>
       </div>
     </section>
@@ -165,7 +180,12 @@ function Portada() {
 
 function Mecanismo() {
   return (
-    <section id="socio" className="trama border-t border-borde bg-anil-800 py-[clamp(4.5rem,9vw,7.5rem)]">
+    <section
+      id="socio"
+      data-tinte="si"
+      className="trama relative border-t border-borde py-[clamp(4.5rem,9vw,7.5rem)]"
+    >
+      <JuntaEspinazo />
       <div className="mx-auto max-w-[1240px] px-5 sm:px-8">
         <h2 className="max-w-[30ch] font-display text-[clamp(2rem,4.2vw,3.3rem)] font-bold">
           Aquí no hay clientes. Hay dueños.
@@ -178,7 +198,7 @@ function Mecanismo() {
 
         <ul className="mt-14 grid gap-px bg-borde md:grid-cols-2">
           {mecanismo.map((m) => (
-            <li key={m.afirmacion} className="bg-anil-800 px-6 py-8 sm:px-8 sm:py-10">
+            <li key={m.afirmacion} className="bg-anil-tinte px-6 py-8 sm:px-8 sm:py-10">
               <h3 className="font-display text-[1.6rem] leading-[1.12] font-bold text-fibra">
                 {m.afirmacion}
               </h3>
@@ -202,7 +222,11 @@ function Mecanismo() {
 
 function Productos() {
   return (
-    <section id="productos" className="border-t border-borde bg-anil-850 py-[clamp(4.5rem,9vw,7.5rem)]">
+    <section
+      id="productos"
+      className="relative border-t border-borde bg-anil-850 py-[clamp(4.5rem,9vw,7.5rem)]"
+    >
+      <JuntaEspinazo />
       <div className="mx-auto max-w-[1240px] px-5 sm:px-8">
         <h2 className="max-w-[28ch] font-display text-[clamp(2rem,4.2vw,3.3rem)] font-bold">
           Cuatro hebras, un solo trenzado.
@@ -270,8 +294,9 @@ function Gobierno() {
     <section
       id="gobierno"
       data-densa="si"
-      className="trama border-t border-borde bg-anil-900 py-[clamp(4.5rem,9vw,7.5rem)]"
+      className="trama relative border-t border-borde bg-anil-900 py-[clamp(4.5rem,9vw,7.5rem)]"
     >
+      <JuntaEspinazo />
       <div className="mx-auto max-w-[1240px] px-5 sm:px-8">
         <h2 className="max-w-[26ch] font-display text-[clamp(2rem,4.2vw,3.3rem)] font-bold">
           Quien decide aquí eres tú, una vez al año.
@@ -350,7 +375,11 @@ function Gobierno() {
 
 function Asociarse() {
   return (
-    <section id="asociarse" className="border-t border-borde bg-anil-800 py-[clamp(4.5rem,9vw,7.5rem)]">
+    <section
+      id="asociarse"
+      className="relative border-t border-borde bg-anil-800 py-[clamp(4.5rem,9vw,7.5rem)]"
+    >
+      <JuntaEspinazo />
       <div className="mx-auto max-w-[1240px] px-5 sm:px-8">
         <h2 className="max-w-[26ch] font-display text-[clamp(2rem,4.2vw,3.3rem)] font-bold">
           Cómo te vuelves dueño.
@@ -395,18 +424,38 @@ function Asociarse() {
 
 function Contacto() {
   const canales = [
-    { Icono: IconoSucursal, rotulo: "Sucursales", valor: contacto.sucursales.pendiente },
-    { Icono: IconoTelefono, rotulo: "Teléfono del socio", valor: contacto.telefono.pendiente },
-    { Icono: IconoSobre, rotulo: "Correo", valor: contacto.correo.pendiente },
+    {
+      Icono: IconoSucursal,
+      rotulo: "Ve a una sucursal",
+      apoyo: "Es donde se abre el expediente y donde se firma. El canal principal.",
+      valor: contacto.sucursales.pendiente,
+      paso: "encima" as const,
+    },
+    {
+      Icono: IconoTelefono,
+      rotulo: "Llama antes de ir",
+      apoyo: "Para confirmar horario y qué documentos te van a pedir.",
+      valor: contacto.telefono.pendiente,
+      paso: "debajo" as const,
+    },
+    {
+      Icono: IconoSobre,
+      rotulo: "Escribe si prefieres",
+      apoyo: "Consultas que no requieren presencia, y dudas sobre el estatuto.",
+      valor: contacto.correo.pendiente,
+      paso: "debajo" as const,
+    },
   ];
 
   return (
     <section
       id="contacto"
-      className="trama border-t border-borde bg-anil-700 py-[clamp(4.5rem,9vw,7.5rem)]"
+      data-tinte="si"
+      className="trama relative border-t border-borde py-[clamp(4.5rem,9vw,7.5rem)]"
       style={{ ["--trama-v" as string]: "color-mix(in oklab, var(--fibra) 11%, transparent)" }}
     >
-      <div className="mx-auto max-w-[1240px] px-5 sm:px-8">
+      <JuntaEspinazo />
+      <div className="mx-auto max-w-[1240px] px-6 sm:px-8">
         <h2 className="max-w-[24ch] font-display text-[clamp(2rem,4.2vw,3.3rem)] font-bold">
           El último paso lo damos en persona.
         </h2>
@@ -415,19 +464,29 @@ function Contacto() {
           Ve a una sucursal, pregunta por un oficial de negocios y llévale esta lista.
         </p>
 
-        <dl className="mt-12 grid gap-px bg-borde-firme sm:grid-cols-3">
-          {canales.map(({ Icono, rotulo, valor }) => (
-            <div key={rotulo} className="bg-anil-700 px-6 py-7">
-              <dt className="flex items-center gap-2.5 text-[0.9rem] font-bold tracking-[0.06em] text-fibra uppercase">
-                <Icono size={18} className="shrink-0 text-fibra" />
-                {rotulo}
-              </dt>
-              <dd className="mt-3.5">
+        {/* Tres hebras, no tres tarjetas iguales con su iconito */}
+        <div className="mt-12 flex max-w-[860px] flex-col gap-3">
+          {canales.map(({ Icono, rotulo, apoyo, valor, paso }) => (
+            <div
+              key={rotulo}
+              data-hebra={paso}
+              className="flex flex-col gap-x-8 gap-y-4 px-6 py-6 sm:flex-row sm:items-center sm:px-8"
+            >
+              <span className="min-w-0 flex-1">
+                <span className="block font-display text-[1.28rem] leading-tight font-bold text-fibra">
+                  {rotulo}
+                </span>
+                <span className="mt-1.5 block max-w-[44ch] text-[0.99rem] text-fibra-media">
+                  {apoyo}
+                </span>
+              </span>
+              <span className="flex items-center gap-4 sm:shrink-0">
                 <Cabo>{valor}</Cabo>
-              </dd>
+                <Icono size={22} className="shrink-0 text-fibra-honda" />
+              </span>
             </div>
           ))}
-        </dl>
+        </div>
       </div>
     </section>
   );

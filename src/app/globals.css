@@ -17,10 +17,13 @@
   --anil-800: #0c3026;
   --anil-700: #114036;
   --anil-600: #17564a;
+  /* El tinte: aquí la anilina por fin se lee como tintura y no como casi negro.
+     Ocupa regiones enteras, no acentos. */
+  --anil-tinte: #0f5d4b;
 
   /* Fibra cruda: la tinta */
   --fibra: #e8e2cc;
-  --fibra-media: #b9b79c;
+  --fibra-media: #cfcbb0;
   --fibra-honda: #7d8271;
 
   /* Anilina fucsia: la hebra activa */
@@ -29,6 +32,8 @@
 
   /* Ocre quemado: la segunda tintura */
   --ocre: #e5a052;
+  /* El ocre sobre el tinte necesita subir para mantener 4.5:1 */
+  --ocre-tinte: #f5c78e;
 
   /* Paso de la trama */
   --paso: 20px;
@@ -44,6 +49,7 @@
   --color-anil-800: var(--anil-800);
   --color-anil-700: var(--anil-700);
   --color-anil-600: var(--anil-600);
+  --color-anil-tinte: var(--anil-tinte);
   --color-fibra: var(--fibra);
   --color-fibra-media: var(--fibra-media);
   --color-fibra-honda: var(--fibra-honda);
@@ -76,12 +82,13 @@
     --apriete: 0;
   }
 }
-@keyframes cerrar-espinazo {
+/* El espinazo se recorre al bajar: la misma hebra, avanzando. */
+@keyframes correr-espinazo {
   from {
-    --paso: 17px;
+    background-position-y: 0;
   }
   to {
-    --paso: 9px;
+    background-position-y: -1320px;
   }
 }
 
@@ -195,6 +202,22 @@
     );
     mask-size: calc(var(--paso) * 2) calc(var(--paso) * 2);
   }
+  /* Región entera teñida. Redefine los tokens que dependen del fondo para
+     que el contraste no se caiga al cambiar la tierra. */
+  [data-tinte="si"] {
+    background-color: var(--anil-tinte);
+    --ocre: var(--ocre-tinte);
+    --borde: color-mix(in oklab, var(--fibra) 22%, transparent);
+    --borde-firme: color-mix(in oklab, var(--fibra) 38%, transparent);
+    --casquillo: var(--anil-tinte);
+  }
+  [data-tinte="si"] [data-hebra="debajo"] {
+    background: color-mix(in oklab, var(--anil-900) 34%, var(--anil-tinte));
+  }
+  [data-tinte="si"] [data-hebra="encima"] {
+    background: color-mix(in oklab, var(--fibra) 7%, var(--anil-tinte));
+  }
+
   .trama[data-densa="si"] {
     --paso: 13px;
     --hebra: 8px;
@@ -308,13 +331,35 @@
     .trenza {
       animation: apretar 1250ms cubic-bezier(0.16, 1, 0.3, 1) both;
     }
-    /* El espinazo: una sola hebra recorre la página y se cierra al bajar */
+    /* El espinazo: la misma hebra avanza a medida que se baja */
     @supports (animation-timeline: scroll()) {
       .espinazo {
-        animation: cerrar-espinazo linear both;
+        animation: correr-espinazo linear both;
         animation-timeline: scroll(root block);
       }
     }
+  }
+
+  /* ---------- El espinazo ----------
+     Un tramo de trenza de una longitud de onda exacta, repetido en vertical.
+     Es la MISMA hebra del primer viewport recorriendo la página entera; las
+     juntas marcan dónde se interrumpe a propósito. */
+
+  .espinazo {
+    background-repeat: repeat-y;
+    background-position: center top;
+    /* por encima del fondo de las secciones, que si no lo tapan */
+    z-index: 5;
+  }
+
+  /* La junta sobre el espinazo: la rotura deliberada en cada frontera */
+  .junta-espinazo {
+    position: absolute;
+    top: -3px;
+    height: 6px;
+    background: var(--fibra-honda);
+    z-index: 6;
+    pointer-events: none;
   }
 
   /* ---------- Composición ---------- */

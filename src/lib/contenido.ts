@@ -17,7 +17,7 @@ export const marca = {
   corto: "Raíz",
   tesis: "Una hebra sola no carga nada.",
   bajada:
-    "Trenzadas, cargan peso real. Eso es una cooperativa de ahorro y crédito: tu dinero y el de otros mil socios sosteniéndose entre sí, sin accionistas en el medio.",
+    "Trenzadas, cargan peso real. Eso es una cooperativa de ahorro y crédito: tu dinero y el de los demás socios sosteniéndose entre sí, sin accionistas en el medio.",
 } as const;
 
 export const navegacion = [
