@@ -1,0 +1,342 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Pleita — el trenzado que sostiene
+   Fibra de palma dominicana teñida en anilina.
+   Una hebra sola no carga nada; trenzadas cargan peso real.
+
+   Todo lo propio vive en @layer base / @layer components. Sin capa,
+   estas reglas ganarían a las utilidades de Tailwind y romperían la
+   maquetación en silencio.
+   ============================================================ */
+
+:root {
+  /* Tierra: anilina verde, saturada, ocupa regiones enteras */
+  --anil-900: #061c15;
+  --anil-850: #08231b;
+  --anil-800: #0c3026;
+  --anil-700: #114036;
+  --anil-600: #17564a;
+
+  /* Fibra cruda: la tinta */
+  --fibra: #e8e2cc;
+  --fibra-media: #b9b79c;
+  --fibra-honda: #7d8271;
+
+  /* Anilina fucsia: la hebra activa */
+  --anilina: #e8407f;
+  --anilina-claro: #ff7fae;
+
+  /* Ocre quemado: la segunda tintura */
+  --ocre: #e5a052;
+
+  /* Paso de la trama */
+  --paso: 20px;
+  --hebra: 13px;
+
+  --borde: color-mix(in oklab, var(--fibra) 16%, transparent);
+  --borde-firme: color-mix(in oklab, var(--fibra) 30%, transparent);
+}
+
+@theme inline {
+  --color-anil-900: var(--anil-900);
+  --color-anil-850: var(--anil-850);
+  --color-anil-800: var(--anil-800);
+  --color-anil-700: var(--anil-700);
+  --color-anil-600: var(--anil-600);
+  --color-fibra: var(--fibra);
+  --color-fibra-media: var(--fibra-media);
+  --color-fibra-honda: var(--fibra-honda);
+  --color-anilina: var(--anilina);
+  --color-anilina-claro: var(--anilina-claro);
+  --color-ocre: var(--ocre);
+  --color-borde: var(--borde);
+  --color-borde-firme: var(--borde-firme);
+
+  --font-display: var(--fuente-display);
+  --font-texto: var(--fuente-texto);
+}
+
+@property --apriete {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+@property --paso {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 20px;
+}
+
+@keyframes apretar {
+  from {
+    --apriete: 1;
+  }
+  to {
+    --apriete: 0;
+  }
+}
+@keyframes cerrar-espinazo {
+  from {
+    --paso: 17px;
+  }
+  to {
+    --paso: 9px;
+  }
+}
+
+@layer base {
+  html {
+    background: var(--anil-850);
+    scrollbar-color: var(--anil-600) var(--anil-900);
+    -webkit-tap-highlight-color: color-mix(in oklab, var(--anilina) 30%, transparent);
+  }
+
+  body {
+    background: var(--anil-850);
+    color: var(--fibra);
+    font-family: var(--fuente-texto), system-ui, sans-serif;
+    font-size: 1.0625rem; /* 17px — piso de legibilidad para la audiencia */
+    line-height: 1.6;
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Las superficies que no dibujé también llevan el diseño */
+  ::selection {
+    background: var(--anilina);
+    color: var(--anil-900);
+  }
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--anil-900);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--anil-600);
+    border: 2px solid var(--anil-900);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--fibra-honda);
+  }
+  :where(input, textarea) {
+    caret-color: var(--anilina-claro);
+  }
+  :where(a, button, summary, input, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--anilina-claro);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+  :where(a) {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: from-font;
+  }
+  :where(table, .cifra, [data-cifra]) {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+  ::placeholder {
+    color: var(--fibra-honda);
+    opacity: 1;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--fuente-display), system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.028em;
+    text-wrap: balance;
+    line-height: 1.02;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* ==========================================================
+     LA TRAMA
+     Hebras horizontales completas; las verticales enmascaradas
+     en tablero, así el cruce alterna encima/debajo de verdad.
+     ========================================================== */
+
+  .trama {
+    position: relative;
+    isolation: isolate;
+  }
+  .trama::before,
+  .trama::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .trama::before {
+    background-image: repeating-linear-gradient(
+      180deg,
+      var(--trama-h, color-mix(in oklab, var(--fibra) 4.5%, transparent)) 0 var(--hebra),
+      transparent var(--hebra) var(--paso)
+    );
+  }
+  .trama::after {
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--trama-v, color-mix(in oklab, var(--fibra) 7%, transparent)) 0 var(--hebra),
+      transparent var(--hebra) var(--paso)
+    );
+    mask-image: repeating-conic-gradient(
+      from 0deg at 50% 50%,
+      #000 0deg 90deg,
+      transparent 90deg 180deg
+    );
+    mask-size: calc(var(--paso) * 2) calc(var(--paso) * 2);
+  }
+  .trama[data-densa="si"] {
+    --paso: 13px;
+    --hebra: 8px;
+  }
+
+  /* ==========================================================
+     LA HEBRA
+     Encima = activa. Debajo = disponible. Cabo = pendiente.
+     Cada estado lleva marca física, no sólo tono.
+
+     Una hebra cortada no tiene contorno: tiene dos cantos largos
+     y dos extremos de corte. Por eso no lleva borde alrededor.
+     ========================================================== */
+
+  [data-hebra] {
+    position: relative;
+    border-top: 1px solid var(--borde);
+    border-bottom: 1px solid var(--borde);
+    transition:
+      transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1),
+      background-color 260ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 260ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Veta de la fibra, a lo largo de la hebra */
+  [data-hebra]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--fibra) 3%, transparent) 0 1px,
+      transparent 1px 12px
+    );
+  }
+
+  [data-hebra="debajo"] {
+    background: var(--anil-800);
+    z-index: 1;
+  }
+
+  [data-hebra="encima"] {
+    background: var(--anil-700);
+    border-color: var(--borde-firme);
+    box-shadow:
+      0 12px 30px -10px rgb(0 0 0 / 0.62),
+      0 3px 6px -3px rgb(0 0 0 / 0.45);
+    transform: translateY(-2px);
+    z-index: 3;
+  }
+
+  /* La marca del cruce es un punzón: el alfiler que sujeta la hebra
+     al pasar por encima. Objeto físico, no franja de color en el canto. */
+  [data-hebra="encima"]::before {
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: -6px;
+    width: 11px;
+    height: 11px;
+    rotate: 45deg;
+    background: var(--anilina);
+    border: 1px solid var(--anil-850);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.55);
+    z-index: 4;
+  }
+
+  [data-hebra="debajo"]:hover,
+  [data-hebra="debajo"]:focus-within {
+    background: var(--anil-700);
+    border-color: var(--borde-firme);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px -10px rgb(0 0 0 / 0.5);
+  }
+
+  /* ---------- El cabo suelto: dato que no existe todavía ---------- */
+
+  .cabo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5ch;
+    color: var(--ocre);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .cabo svg {
+    flex: none;
+  }
+
+  /* ---------- El trenzado del primer viewport ---------- */
+
+  /* Por defecto: trenzado cerrado. La animación sólo añade la entrada,
+     así que sin motion permitido se ve el estado final, no el suelto. */
+  .trenza {
+    --apriete: 0;
+  }
+  /* La trenza vertical se abre a lo ancho; la horizontal, a lo alto.
+     Siempre en el eje perpendicular al recorrido de las hebras. */
+  .trenza:not(.trenza-h) {
+    scale: calc(1 + 2.1 * var(--apriete)) 1;
+  }
+  .trenza-h {
+    scale: 1 calc(1 + 2.1 * var(--apriete));
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    /* El único momento autorizado de la página: la trenza se aprieta una vez. */
+    .trenza {
+      animation: apretar 1250ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    /* El espinazo: una sola hebra recorre la página y se cierra al bajar */
+    @supports (animation-timeline: scroll()) {
+      .espinazo {
+        animation: cerrar-espinazo linear both;
+        animation-timeline: scroll(root block);
+      }
+    }
+  }
+
+  /* ---------- Composición ---------- */
+
+  .medida {
+    max-width: 68ch; /* 65–75ch */
+  }
+
+  /* La junta: donde la hebra continua se interrumpe a propósito */
+  .junta {
+    position: relative;
+    height: 1px;
+    background: var(--borde);
+  }
+  .junta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 46px;
+    height: 3px;
+    translate: 0 -50%;
+    background: var(--fibra-honda);
+  }
+}
